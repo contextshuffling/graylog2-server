@@ -1,6 +1,6 @@
 // @flow strict
 import * as Immutable from 'immutable';
-import ParameterBinding from '../parameters/ParameterBinding';
+import ParameterBinding from 'views/logic/parameters/ParameterBinding';
 import type { QueryString, TimeRange } from '../queries/Query';
 
 export type GlobalOverride = {

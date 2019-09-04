@@ -72,10 +72,13 @@ import NewDashboardPage from 'views/pages/NewDashboardPage';
 import StreamSearchPage from 'views/pages/StreamSearchPage';
 import ShowDashboardInBigDisplayMode from 'views/pages/ShowDashboardInBigDisplayMode';
 import AppConfig from 'util/AppConfig';
+import LookupTableParameter from 'views/logic/parameters/LookupTableParameter';
 import type { ActionHandlerArguments, ActionHandlerCondition } from './components/actions/ActionHandler';
 import NumberVisualizationConfig from './logic/aggregationbuilder/visualizations/NumberVisualizationConfig';
 import BarVisualizationConfiguration from './components/aggregationbuilder/BarVisualizationConfiguration';
 import NumberVisualizationConfiguration from './components/aggregationbuilder/NumberVisualizationConfiguration';
+import Parameter from './logic/parameters/Parameter';
+import ValueParameter from './logic/parameters/ValueParameter';
 
 Widget.registerSubtype(AggregationWidget.type, AggregationWidget);
 Widget.registerSubtype(MessagesWidget.type, MessagesWidget);
@@ -88,6 +91,9 @@ VisualizationConfig.registerSubtype(NumberVisualization.type, NumberVisualizatio
 ViewSharing.registerSubtype(AllUsersOfInstance.Type, AllUsersOfInstance);
 ViewSharing.registerSubtype(SpecificRoles.Type, SpecificRoles);
 ViewSharing.registerSubtype(SpecificUsers.Type, SpecificUsers);
+
+Parameter.registerSubtype(ValueParameter.type, ValueParameter);
+Parameter.registerSubtype(LookupTableParameter.type, LookupTableParameter);
 
 const enableNewSearch = AppConfig.isFeatureEnabled('search_3_2');
 
