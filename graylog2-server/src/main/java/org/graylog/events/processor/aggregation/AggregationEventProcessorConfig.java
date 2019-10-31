@@ -62,6 +62,7 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
     private static final String FIELD_CONDITIONS = "conditions";
     private static final String FIELD_SEARCH_WITHIN_MS = "search_within_ms";
     private static final String FIELD_EXECUTE_EVERY_MS = "execute_every_ms";
+    private static final String FIELD_CATCH_UP_WINDOW_MS = "catch_up_window_ms";
 
     @JsonProperty(FIELD_QUERY)
     public abstract String query();
@@ -83,6 +84,9 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
 
     @JsonProperty(FIELD_EXECUTE_EVERY_MS)
     public abstract long executeEveryMs();
+
+    @JsonProperty(FIELD_CATCH_UP_WINDOW_MS)
+    public abstract Optional<Long> catchUpWindowMs();
 
     @Override
     public Set<String> requiredPermissions() {
@@ -113,6 +117,7 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
                 .eventDefinitionId(eventDefinition.id())
                 .processingWindowSize(searchWithinMs())
                 .processingHopSize(executeEveryMs())
+                .processingCatchUpWindowSize(catchUpWindowMs())
                 .parameters(AggregationEventProcessorParameters.builder()
                         .timerange(timerange)
                         .build())
@@ -130,7 +135,8 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
         @JsonCreator
         public static Builder create() {
             return new AutoValue_AggregationEventProcessorConfig.Builder()
-                    .type(TYPE_NAME);
+                    .type(TYPE_NAME)
+                    .catchUpWindowMs(Optional.of(EventProcessorExecutionJob.DEFAULT_CATCH_UP_WINDOW));
         }
 
         @JsonProperty(FIELD_QUERY)
@@ -153,6 +159,9 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
 
         @JsonProperty(FIELD_EXECUTE_EVERY_MS)
         public abstract Builder executeEveryMs(long executeEveryMs);
+
+        @JsonProperty(FIELD_CATCH_UP_WINDOW_MS)
+        public abstract Builder catchUpWindowMs(Optional<Long> catchUpWindowMs);
 
         public abstract AggregationEventProcessorConfig build();
     }

@@ -17,6 +17,7 @@
 package org.graylog.events.processor;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -32,6 +33,7 @@ import org.graylog.scheduler.JobTriggerData;
 import org.graylog.scheduler.JobTriggerUpdate;
 import org.graylog.scheduler.clock.JobSchedulerClock;
 import org.joda.time.DateTime;
+import org.joda.time.Duration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -54,6 +56,7 @@ public class EventProcessorExecutionJob implements Job {
 
     // TODO: Make retry interval configurable and check if we need different intervals for different error conditions
     private static final long RETRY_INTERVAL = 5000;
+    public static final long DEFAULT_CATCH_UP_WINDOW = Duration.standardHours(1).getMillis();
 
     private final JobScheduleStrategies scheduleStrategies;
     private final JobSchedulerClock clock;
@@ -122,8 +125,22 @@ public class EventProcessorExecutionJob implements Job {
             // we are using in Elasticsearch is only using millisecond precision. ("date") Once we switch to a
             // different date type with nanosecond precision (e.g. "date_nanos"), this workaround will break and we
             // will miss messages.
-            final DateTime nextTo = to.plus(config.processingHopSize());
-            final DateTime nextFrom = nextTo.minus(config.processingWindowSize()).plusMillis(1);
+            DateTime nextTo = to.plus(config.processingHopSize());
+            DateTime nextFrom = nextTo.minus(config.processingWindowSize()).plusMillis(1);
+
+            // If the event processor is catching up on old data (e.g. the server was shut down for a significant time),
+            // we can switch to a bigger scheduling window: `processingCatchUpWindowSize`.
+            // If enabled, it will ignore the processingHopSize and will schedule a tumbling window timerange of `processingCatchUpWindowSize` chunks.
+            final Long catchUpSize = config.processingCatchUpWindowSize().orElse(null);
+            if (catchUpSize != null && to.plus(catchUpSize).isBefore(now)) {
+                final long chunkCount = catchUpSize / config.processingWindowSize();
+
+                // Align to multiples of the processingWindowSize
+                nextTo = to.plus(config.processingWindowSize() * chunkCount);
+                nextFrom = to.plusMillis(1);
+                LOG.debug("eventproc <{}> is catching up on old data. Combining {} search windows with catchUpWindowSize={}ms: from={} to={}",
+                        config.eventDefinitionId(), chunkCount, catchUpSize, nextFrom, nextTo);
+            }
 
             LOG.trace("Set new timerange of eventproc <{}> in job trigger data: from={} to={} (hopSize={}ms windowSize={}ms)",
                     config.eventDefinitionId(), nextFrom, nextTo, config.processingHopSize(), config.processingWindowSize());
@@ -197,6 +214,7 @@ public class EventProcessorExecutionJob implements Job {
         private static final String FIELD_PARAMETERS = "parameters";
         private static final String FIELD_PROCESSING_WINDOW_SIZE = "processing_window_size";
         private static final String FIELD_PROCESSING_HOP_SIZE = "processing_hop_size";
+        private static final String FIELD_PROCESSING_CATCH_UP_WINDOW_SIZE = "processing_catch_up_window_size";
 
         @JsonProperty(FIELD_EVENT_DEFINITION_ID)
         public abstract String eventDefinitionId();
@@ -210,6 +228,9 @@ public class EventProcessorExecutionJob implements Job {
         @JsonProperty(FIELD_PROCESSING_HOP_SIZE)
         public abstract long processingHopSize();
 
+        @JsonProperty(FIELD_PROCESSING_CATCH_UP_WINDOW_SIZE)
+        public abstract Optional<Long> processingCatchUpWindowSize();
+
         public static Builder builder() {
             return Builder.create();
         }
@@ -220,7 +241,9 @@ public class EventProcessorExecutionJob implements Job {
         public static abstract class Builder implements JobDefinitionConfig.Builder<Builder> {
             @JsonCreator
             public static Builder create() {
-                return new AutoValue_EventProcessorExecutionJob_Config.Builder().type(TYPE_NAME);
+                return new AutoValue_EventProcessorExecutionJob_Config.Builder()
+                        .type(TYPE_NAME)
+                        .processingCatchUpWindowSize(Optional.of(DEFAULT_CATCH_UP_WINDOW));
             }
 
             @JsonProperty(FIELD_EVENT_DEFINITION_ID)
@@ -234,6 +257,12 @@ public class EventProcessorExecutionJob implements Job {
 
             @JsonProperty(FIELD_PROCESSING_HOP_SIZE)
             public abstract Builder processingHopSize(long hopSize);
+
+            @JsonProperty(FIELD_PROCESSING_CATCH_UP_WINDOW_SIZE)
+            public abstract Builder processingCatchUpWindowSize(Optional<Long> catchUpWindowSize);
+
+            @JsonIgnore
+            public abstract Builder processingCatchUpWindowSize(Long catchUpWindowSize);
 
             abstract Config autoBuild();
 

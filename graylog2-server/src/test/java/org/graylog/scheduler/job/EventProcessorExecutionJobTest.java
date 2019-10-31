@@ -444,6 +444,88 @@ public class EventProcessorExecutionJobTest {
     }
 
     @Test
+    public void executeWithCatchUp() throws Exception {
+
+        // for easier testing. don't run into the previous day
+        clock.plus(1, TimeUnit.MINUTES);
+
+        final DateTime now = clock.nowUTC();
+        // When using a hopping window, the window size is not the same as the hop size
+        final long processingWindowSize = Duration.standardSeconds(60).getMillis();
+        final long processingHopSize = Duration.standardSeconds(5).getMillis();
+        final long processingCatchUpWindowSize = Duration.standardHours(1).getMillis();
+        final int scheduleIntervalSeconds = 5;
+        final DateTime from = now.minus(processingWindowSize);
+        final DateTime to = now;
+        final DateTime triggerNextTime = now;
+        final Duration timeSpentInEventProcessor = Duration.standardSeconds(7);
+
+        final TestEventProcessorParameters eventProcessorParameters = TestEventProcessorParameters.create(from, to);
+        final JobDefinitionDto jobDefinition = JobDefinitionDto.builder()
+                .id("job-1")
+                .title("Test")
+                .description("A test")
+                .config(EventProcessorExecutionJob.Config.builder()
+                        .eventDefinitionId("processor-1")
+                        .processingWindowSize(processingWindowSize)
+                        .processingHopSize(processingHopSize)
+                        .processingCatchUpWindowSize(processingCatchUpWindowSize)
+                        .parameters(eventProcessorParameters)
+                        .build())
+                .build();
+
+        final EventProcessorExecutionJob job = new EventProcessorExecutionJob(jobScheduleStrategies, clock, eventProcessorEngine, jobDefinition);
+
+        final JobTriggerDto trigger = JobTriggerDto.builderWithClock(clock)
+                .id("trigger-1")
+                .jobDefinitionId(jobDefinition.id())
+                .startTime(now)
+                .nextTime(triggerNextTime)
+                .status(JobTriggerStatus.RUNNABLE)
+                .schedule(IntervalJobSchedule.builder()
+                        .interval(scheduleIntervalSeconds)
+                        .unit(TimeUnit.SECONDS)
+                        .build())
+                .build();
+
+        final JobExecutionContext jobExecutionContext = JobExecutionContext.builder()
+                .definition(jobDefinition)
+                .trigger(trigger)
+                .isRunning(new AtomicBoolean(true))
+                .jobTriggerUpdates(new JobTriggerUpdates(clock, jobScheduleStrategies, trigger))
+                .build();
+
+        doAnswer(invocation -> {
+            // Simulate work in the event processor
+            clock.plus(timeSpentInEventProcessor.getStandardSeconds(), TimeUnit.SECONDS);
+            return null;
+        }).when(eventProcessorEngine).execute(any(), any());
+
+        // Simulate that we are behind at least one `processingCatchUpWindowSize`
+        clock.plus(processingCatchUpWindowSize, TimeUnit.MILLISECONDS);
+        clock.plus(1, TimeUnit.MILLISECONDS);
+
+        final JobTriggerUpdate triggerUpdate = job.execute(jobExecutionContext);
+
+        verify(eventProcessorEngine, times(1))
+                .execute("processor-1", eventProcessorParameters);
+
+        // The next time should be updated to the current clock, because we are catching up on old data.
+        // The 7 second event processor runtime should not be added to the new nextTime.
+        assertThat(triggerUpdate.nextTime()).isPresent().get().isEqualTo(clock.nowUTC().minus(timeSpentInEventProcessor));
+
+        // We are behind one chunk of processingCatchUpWindowSize
+        // The new nextFrom should ignore the processingHopSize and start 1ms after the last `To` Range
+        // The nextTo will be one window of the processingCatchUpWindowSize
+        assertThat(triggerUpdate.data()).isPresent().get().isEqualTo(EventProcessorExecutionJob.Data.builder()
+                .timerangeFrom(to.plusMillis(1))
+                .timerangeTo(to.plus(processingCatchUpWindowSize))
+                .build());
+
+        assertThat(triggerUpdate.status()).isNotPresent();
+    }
+
+    @Test
     public void executeWithHoppingWindow() throws Exception {
         clock.plus(60, TimeUnit.SECONDS);
 
