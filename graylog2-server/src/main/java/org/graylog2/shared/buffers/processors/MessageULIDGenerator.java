@@ -84,13 +84,17 @@ public class MessageULIDGenerator {
         // is updated by multiple concurrent processor threads. This could mean that
         // the committed offset is actually slightly higher than message offset.
         // Thus we simply add a gap constant (OFFSET_GAP) to prevent us from creating a negative messageSequenceNr.
-
         long msbWithZeroedRandom = mostSignificantBits & ~RANDOM_MSB_MASK;
         long messageSequenceNr = message.getJournalOffset() - subtrahend + OFFSET_GAP;
+
         if (messageSequenceNr >= RANDOM_MSB_MASK) {
             LOG.warn("Message sequence number does not fit into ULID ({} >= 65535). Sort order might be wrong.", messageSequenceNr);
             messageSequenceNr %= RANDOM_MSB_MASK;
+        } else if (messageSequenceNr < 0) {
+            LOG.warn("Ignoring negative message sequence number ({}). Sort order might be wrong.", messageSequenceNr);
+            messageSequenceNr = 0;
         }
+
         final ULID.Value sequencedUlid = new ULID.Value(msbWithZeroedRandom + messageSequenceNr, leastSignificantBits);
         message.addField(Message.FIELD_GL2_MESSAGE_ID, sequencedUlid.toString());
         return message;
