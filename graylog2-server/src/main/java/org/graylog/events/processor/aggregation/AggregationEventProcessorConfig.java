@@ -192,6 +192,11 @@ public abstract class AggregationEventProcessorConfig implements EventProcessorC
         if (!series().isEmpty() && isConditionsEmpty()) {
             validationResult.addError(FIELD_CONDITIONS, "Aggregation with series must also contain conditions");
         }
+        if (catchUpWindowMs().isPresent()) {
+            if (catchUpWindowMs().get() < searchWithinMs()) {
+                validationResult.addError(FIELD_CATCH_UP_WINDOW_MS, "The catch_up_window_ms size needs to be greater than search_within_ms");
+            }
+        }
 
         return validationResult;
     }
