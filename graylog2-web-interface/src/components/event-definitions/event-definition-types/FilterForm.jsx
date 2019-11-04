@@ -44,15 +44,18 @@ class FilterForm extends React.Component {
   constructor(props) {
     super(props);
 
-    const { execute_every_ms: executeEveryMs, search_within_ms: searchWithinMs } = props.eventDefinition.config;
+    const { execute_every_ms: executeEveryMs, search_within_ms: searchWithinMs, catch_up_window_ms: catchUpWindowMs } = props.eventDefinition.config;
     const searchWithin = extractDurationAndUnit(searchWithinMs, TIME_UNITS);
     const executeEvery = extractDurationAndUnit(executeEveryMs, TIME_UNITS);
+    const catchUpWindow = extractDurationAndUnit(catchUpWindowMs, TIME_UNITS);
 
     this.state = {
       searchWithinMsDuration: searchWithin.duration,
       searchWithinMsUnit: searchWithin.unit,
       executeEveryMsDuration: executeEvery.duration,
       executeEveryMsUnit: executeEvery.unit,
+      catchUpWindowMsDuration: catchUpWindow.duration,
+      catchUpWindowMsUnit: catchUpWindow.unit,
     };
   }
 
@@ -87,7 +90,7 @@ class FilterForm extends React.Component {
 
   render() {
     const { eventDefinition, streams, validation } = this.props;
-    const { searchWithinMsDuration, searchWithinMsUnit, executeEveryMsDuration, executeEveryMsUnit } = this.state;
+    const { searchWithinMsDuration, searchWithinMsUnit, executeEveryMsDuration, executeEveryMsUnit, catchUpWindowMsDuration, catchUpWindowMsUnit } = this.state;
 
     // Ensure deleted streams are still displayed in select
     const allStreamIds = lodash.union(streams.map(s => s.id), lodash.defaultTo(eventDefinition.config.streams, []));
@@ -138,6 +141,20 @@ class FilterForm extends React.Component {
                          required />
           {validation.errors.execute_every_ms && (
             <HelpBlock>{lodash.get(validation, 'errors.execute_every_ms[0]')}</HelpBlock>
+          )}
+        </FormGroup>
+
+        <FormGroup controlId="catch-up-window" validationState={validation.errors.catch_up_window_ms ? 'error' : null}>
+          <TimeUnitInput label="Catch up window size"
+                         update={this.handleTimeRangeChange('catch_up_window_ms')}
+                         value={catchUpWindowMsDuration}
+                         unit={catchUpWindowMsUnit}
+                         units={TIME_UNITS}
+                         clearable
+                         required />
+          <HelpBlock>If the Event definition is behind schedule, run queries with this window size</HelpBlock>
+          {validation.errors.catch_up_window_ms && (
+            <HelpBlock>{lodash.get(validation, 'errors.catch_up_window_ms[0]')}</HelpBlock>
           )}
         </FormGroup>
       </fieldset>

@@ -61,6 +61,7 @@ class FilterAggregationSummary extends React.Component {
       streams,
       search_within_ms: searchWithinMs,
       execute_every_ms: executeEveryMs,
+      catch_up_window_ms: catchupWindowMs,
       group_by: groupBy,
       series,
       conditions,
@@ -70,6 +71,7 @@ class FilterAggregationSummary extends React.Component {
 
     const searchWithin = extractDurationAndUnit(searchWithinMs, TIME_UNITS);
     const executeEvery = extractDurationAndUnit(executeEveryMs, TIME_UNITS);
+    const catchupWindow = extractDurationAndUnit(catchupWindowMs, TIME_UNITS);
 
     const expressionResults = AggregationExpressionParser.parseExpression(conditions);
 
@@ -88,6 +90,8 @@ class FilterAggregationSummary extends React.Component {
         <dd>{searchWithin.duration} {searchWithin.unit.toLowerCase()}</dd>
         <dt>Execute search every</dt>
         <dd>{executeEvery.duration} {executeEvery.unit.toLowerCase()}</dd>
+        <dt>Catch up window size</dt>
+        <dd>{catchupWindow.duration} {catchupWindow.unit.toLowerCase()}</dd>
         {conditionType === 'aggregation' && (
           <React.Fragment>
             <dt>Group by Field(s)</dt>

@@ -18,6 +18,7 @@ const initialFilterConfig = {
   streams: [],
   search_within_ms: 60 * 1000,
   execute_every_ms: 60 * 1000,
+  catch_up_window_ms: 60 * 60 * 1000,
 };
 
 const initialAggregationConfig = {
