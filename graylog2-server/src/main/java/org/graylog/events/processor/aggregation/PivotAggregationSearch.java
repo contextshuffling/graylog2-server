@@ -42,6 +42,8 @@ import org.graylog.plugins.views.search.searchtypes.pivot.BucketSpec;
 import org.graylog.plugins.views.search.searchtypes.pivot.Pivot;
 import org.graylog.plugins.views.search.searchtypes.pivot.PivotResult;
 import org.graylog.plugins.views.search.searchtypes.pivot.SeriesSpec;
+import org.graylog.plugins.views.search.searchtypes.pivot.buckets.Time;
+import org.graylog.plugins.views.search.searchtypes.pivot.buckets.TimeUnitInterval;
 import org.graylog.plugins.views.search.searchtypes.pivot.buckets.Values;
 import org.graylog.plugins.views.search.searchtypes.pivot.series.Count;
 import org.graylog2.plugin.streams.Stream;
@@ -49,6 +51,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -105,7 +108,7 @@ public class PivotAggregationSearch implements AggregationSearch {
 
     @Override
     public AggregationResult doSearch() throws EventProcessorException {
-        final SearchJob searchJob = getSearchJob(parameters, searchOwner);
+        final SearchJob searchJob = getSearchJob(parameters, searchOwner, config.searchWithinMs());
         final QueryResult queryResult = searchJob.results().get(QUERY_ID);
         final QueryResult streamQueryResult = searchJob.results().get(STREAMS_QUERY_ID);
 
@@ -138,6 +141,7 @@ public class PivotAggregationSearch implements AggregationSearch {
 
         return AggregationResult.builder()
                 .keyResults(extractValues(pivotResult))
+                // TODO get effectiveTimerange from buckets
                 .effectiveTimerange(pivotResult.effectiveTimerange())
                 .totalAggregatedMessages(pivotResult.total())
                 .sourceStreams(extractSourceStreams(streamsResult))
@@ -264,13 +268,17 @@ public class PivotAggregationSearch implements AggregationSearch {
 
                         if (maybeNumberValue instanceof Number) {
                             final double numberValue = ((Number) maybeNumberValue).doubleValue();
-                            final AggregationSeriesValue seriesValue = AggregationSeriesValue.builder()
-                                    .key(row.key())
+                            final AggregationSeriesValue.Builder seriesValue = AggregationSeriesValue.builder();
+                            if (row.key().isEmpty()) {
+                                seriesValue.key(row.key());
+                            } else {
+                                seriesValue.key(row.key().subList(1,row.key().size()));
+                            }
+                            seriesValue
                                     .value(numberValue)
-                                    .series(series)
-                                    .build();
+                                    .series(series);
 
-                            values.add(seriesValue);
+                            values.add(seriesValue.build());
                         } else {
                             // Should not happen
                             throw new IllegalStateException("Got unexpected non-number value for " + series.toString() + " " + row.toString() + " " + value.toString());
@@ -279,8 +287,14 @@ public class PivotAggregationSearch implements AggregationSearch {
                 }
             }
 
-            results.add(AggregationKeyResult.builder()
-                    .key(row.key())
+            // TODO function row.key
+            final AggregationKeyResult.Builder builder = AggregationKeyResult.builder();
+            if (row.key().isEmpty()) {
+                builder.key(row.key());
+            } else {
+                builder.key(row.key().subList(1,row.key().size()));
+            }
+            results.add(builder
                     .seriesValues(values.build())
                     .build());
         }
@@ -288,9 +302,9 @@ public class PivotAggregationSearch implements AggregationSearch {
         return results.build();
     }
 
-    private SearchJob getSearchJob(AggregationEventProcessorParameters parameters, String username) throws EventProcessorException {
+    private SearchJob getSearchJob(AggregationEventProcessorParameters parameters, String username, long searchWithinMs) throws EventProcessorException {
         final Search search = Search.builder()
-                .queries(ImmutableSet.of(getAggregationQuery(parameters), getSourceStreamsQuery(parameters)))
+                .queries(ImmutableSet.of(getAggregationQuery(parameters, searchWithinMs), getSourceStreamsQuery(parameters)))
                 .build();
         final SearchJob searchJob = queryEngine.execute(searchJobService.create(search, username));
         try {
@@ -341,9 +355,10 @@ public class PivotAggregationSearch implements AggregationSearch {
     /**
      * Returns the
      * @param parameters
+     * @param searchWithinMs
      * @return
      */
-    private Query getAggregationQuery(AggregationEventProcessorParameters parameters) {
+    private Query getAggregationQuery(AggregationEventProcessorParameters parameters, long searchWithinMs) {
         final Pivot.Builder pivotBuilder = Pivot.builder()
                 .id(PIVOT_ID)
                 .rollup(true);
@@ -356,8 +371,13 @@ public class PivotAggregationSearch implements AggregationSearch {
             pivotBuilder.series(series);
         }
 
+        final Time interval = Time.builder().interval(TimeUnitInterval.Builder.builder()
+                .timeunit(String.valueOf(searchWithinMs) + "ms")
+                .build()).field("timestamp").build();
+        final List<BucketSpec> groupBy = new ArrayList<>();
+        groupBy.add(interval);
         if (!config.groupBy().isEmpty()) {
-            final List<BucketSpec> groupBy = config.groupBy().stream()
+            groupBy.addAll(config.groupBy().stream()
                     .map(field -> Values.builder()
                             // The pivot search type (as of Graylog 3.1.0) is using the "terms" aggregation under
                             // the hood. The "terms" aggregation is meant to return the "top" terms and does not allow
@@ -377,7 +397,7 @@ public class PivotAggregationSearch implements AggregationSearch {
                             .limit(Integer.MAX_VALUE)
                             .field(field)
                             .build())
-                    .collect(Collectors.toList());
+                    .collect(Collectors.toList()));
             pivotBuilder.rowGroups(groupBy);
         }
 
