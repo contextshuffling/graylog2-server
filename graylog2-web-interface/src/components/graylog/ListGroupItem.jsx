@@ -1,93 +1,91 @@
-import React, { forwardRef, useCallback } from 'react';
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
 // eslint-disable-next-line no-restricted-imports
 import { ListGroupItem as BootstrapListGroupItem } from 'react-bootstrap';
-import { darken } from 'polished';
+import styled, { css } from 'styled-components';
 
-import { useTheme } from 'theme/GraylogThemeContext';
-import { colorLevel } from 'theme/utils';
-import contrastingColor from 'util/contrastingColor';
+import { color } from 'theme';
+import { contrastingColor, colorLevel, readableColor } from 'theme/utils';
+
 import bsStyleThemeVariant from './variants/bsStyle';
 
-const listGroupItemStyles = (hex) => {
-  const backgroundColor = colorLevel(hex, -9);
-  const textColor = colorLevel(hex, 6);
+const listGroupItemStyles = (hex, variant) => {
+  const backgroundColor = colorLevel(color.variant[variant], -9);
+  const textColor = readableColor(backgroundColor);
 
   return css`
-    && {
+    &&.list-group-item-${variant} {
       color: ${textColor};
       background-color: ${backgroundColor};
 
-      &.list-group-item-action {
+      a&,
+      button& {
+        color: ${textColor};
+
+        .list-group-item-heading {
+          color: inherit;
+        }
+
         &:hover,
         &:focus {
           color: ${textColor};
-          background-color: ${darken(0.05, backgroundColor)};
+          background-color: ${color.variant.light[variant]};
         }
-
-        &.active {
-          color: ${contrastingColor(textColor)};
-          background-color: ${textColor};
-          border-color: ${textColor};
-        }
-      }
-
-      &.list-group-item {
-        &.active {
-          color: ${contrastingColor(hex)};
-          background-color: ${hex};
-          border-color: ${hex};
+        &.active,
+        &.active:hover,
+        &.active:focus {
+          color: ${readableColor(color.variant.light[variant])};
+          background-color: ${color.variant.light[variant]};
+          border-color: ${color.variant.light[variant]};
         }
       }
     }
   `;
 };
 
-const ListGroupItem = forwardRef(({ bsStyle, ...props }, ref) => {
-  const { colors } = useTheme();
-  const StyledListGroupItem = useCallback(styled(BootstrapListGroupItem)`
-    &.list-group-item-action {
-      color: ${colors.primary.tre};
+const ListGroupItem = styled(BootstrapListGroupItem)`
 
-      &:hover,
-      &:focus {
-        color: ${colors.primary.tre};
-        background-color: ${colors.secondary.due};
-      }
+${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'danger'])};
 
-      &:active {
-        color: ${contrastingColor(colors.secondary.tre)};
-        background-color: ${colors.secondary.tre};
-      }
+  background-color: ${color.gray[90]};
+  border-color: ${color.gray[80]};
+
+  &&.disabled,
+  &&.disabled:hover,
+  &&.disabled:focus {
+    color: ${color.gray[60]};
+    background-color: ${color.gray[90]};
+
+    .list-group-item-text {
+      color: ${color.gray[60]};
+    }
+  }
+
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: ${color.gray[100]};
+    background-color: ${color.variant.primary};
+    border-color: ${color.variant.light.primary};
+
+    .list-group-item-text {
+      color: ${color.variant.light.primary};
+    }
+  }
+
+  a&,
+  button& {
+    color: ${color.gray[30]};
+
+    .list-group-item-heading {
+      color: ${color.gray[20]};
     }
 
-    &.list-group-item {
-      background-color: ${colors.primary.due};
-      border-color: ${colors.secondary.tre};
-
-      &.disabled,
-      &:disabled {
-        color: ${colors.primary.tre};
-        background-color: ${colors.primary.due};
-      }
+    &:hover,
+    &:focus {
+      color: ${color.gray[30]};
+      background-color: ${color.gray[70]};
     }
+  }
+`;
 
-    ${bsStyleThemeVariant(listGroupItemStyles)}
-  `, [bsStyle, colors]);
-
-  return (
-    <StyledListGroupItem bsStyle={bsStyle} ref={ref} {...props} />
-  );
-});
-
-ListGroupItem.propTypes = {
-  /* Bootstrap `bsStyle` variant name */
-  bsStyle: PropTypes.oneOf(['success', 'warning', 'danger', 'info']),
-};
-
-ListGroupItem.defaultProps = {
-  bsStyle: undefined,
-};
 
 export default ListGroupItem;

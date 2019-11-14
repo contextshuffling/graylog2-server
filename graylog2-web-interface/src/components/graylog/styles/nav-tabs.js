@@ -3,13 +3,13 @@ import { breakpoint, color } from 'theme';
 
 const navTabsStyles = () => css`
   .nav-tabs {
-    border-bottom-color: ${color.tertiary.quattro};
+    border-bottom-color: ${color.variant.primary};
 
     > li {
       > a {
         &:hover {
-          border-color: ${color.secondary.due} ${color.secondary.due} ${color.tertiary.quattro};
-          background-color: ${color.secondary.due};
+          border-color: ${color.gray[90]} ${color.gray[90]} ${color.variant.primary};
+          background-color: ${color.gray[90]};
         }
       }
 
@@ -17,9 +17,9 @@ const navTabsStyles = () => css`
         &,
         &:hover,
         &:focus {
-          color: ${color.primary.tre};
-          background-color: ${color.primary.due};
-          border-color: ${color.tertiary.quattro};
+          color: ${color.global.textDefault};
+          background-color: ${color.gray[100]};
+          border-color: ${color.variant.primary};
           border-bottom-color: transparent;
         }
       }
@@ -29,17 +29,18 @@ const navTabsStyles = () => css`
       > .active > a,
       > .active > a:hover,
       > .active > a:focus {
-        border-color: ${color.tertiary.quattro};
+        border-color: ${color.variant.primary};
       }
 
       @media (min-width: ${breakpoint.min.sm}) {
         > li > a {
-          border-bottom-color: ${color.tertiary.quattro};
+          border-bottom-color: ${color.variant.primary};
         }
+
         > .active > a,
         > .active > a:hover,
         > .active > a:focus {
-          border-bottom-color: ${color.primary.due};
+          border-bottom-color: ${color.gray[100]};
         }
       }
     }

@@ -1,22 +1,21 @@
 // eslint-disable-next-line no-restricted-imports
 import { Panel as BootstrapPanel } from 'react-bootstrap';
 import styled, { css } from 'styled-components';
-import { adjustHue, darken } from 'polished';
 
 import { color } from 'theme';
-import { colorLevel } from 'theme/utils';
+import { colorLevel, readableColor } from 'theme/utils';
 import bsStyleThemeVariant from './variants/bsStyle';
 
-const panelVariantStyles = (hex) => {
-  const backgroundColor = colorLevel(hex, -9);
-  const borderColor = darken(0.05, adjustHue(-10, hex));
+const panelVariantStyles = (hex, variant) => {
+  const backgroundColor = colorLevel(color.variant.light[variant], -9);
+  const borderColor = colorLevel(color.variant.dark[variant], -6);
 
   return css`
     && {
       border-color: ${borderColor};
 
       & > .panel-heading {
-        color: ${colorLevel(backgroundColor, 9)};
+        color: ${readableColor(backgroundColor)};
         background-color: ${backgroundColor};
         border-color: ${borderColor};
 
@@ -38,25 +37,26 @@ const panelVariantStyles = (hex) => {
 };
 
 const StyledPanel = styled(BootstrapPanel)`
-  background-color: ${color.primary.due};
-
+  background-color: ${color.global.contentBackground};
 
   .panel-footer {
-    background-color: ${color.secondary.tre};
-    border-top-color: ${color.secondary.due};
+    background-color: ${color.gray[80]};
+    border-top-color: ${color.gray[90]};
   }
 
   .panel-group {
     .panel-heading {
+      font-weight: 700;
+
       + .panel-collapse > .panel-body,
       + .panel-collapse > .list-group {
-        border-top-color: ${color.secondary.due};
+        border-top-color: ${color.gray[90]};
       }
     }
 
     .panel-footer {
       + .panel-collapse .panel-body {
-        border-bottom-color: ${color.secondary.due};
+        border-bottom-color: ${color.gray[90]};
       }
     }
   }

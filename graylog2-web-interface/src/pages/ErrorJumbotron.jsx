@@ -4,7 +4,7 @@ import { Col, Jumbotron, Row } from 'components/graylog';
 import styled, { createGlobalStyle } from 'styled-components';
 import { rgba } from 'polished';
 
-import { useTheme } from 'theme/GraylogThemeContext';
+import { color } from 'theme';
 import NotFoundBackgroundImage from 'assets/not-found-bg.jpg';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,12 +18,12 @@ const ContainerRow = styled(Row)`
   height: 82vh;
 `;
 
-const StyledJumbotron = color => useCallback(styled(Jumbotron)`
+const StyledJumbotron = jumboColor => useCallback(styled(Jumbotron)`
   && {
-    background-color: ${rgba(color, 0.8)};
+    background-color: ${rgba(jumboColor, 0.8)};
     text-align: center;
   }
-`, [color]);
+`, [jumboColor]);
 
 export const H1 = styled.h1`
   font-size: 52px;
@@ -31,9 +31,7 @@ export const H1 = styled.h1`
 `;
 
 const ErrorJumbotron = ({ children }) => {
-  const { colors } = useTheme();
-
-  const StyledJumbo = StyledJumbotron(colors.primary.due);
+  const StyledJumbo = StyledJumbotron(color.primary.due);
 
   return (
     <ContainerRow>

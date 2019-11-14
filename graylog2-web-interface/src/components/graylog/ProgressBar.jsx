@@ -7,7 +7,7 @@ import { transparentize } from 'polished';
 import { color } from 'theme';
 import { variantColors } from './variants/bsStyle';
 
-const defaultStripColor = transparentize(0.75, color.primary.due);
+const defaultStripColor = transparentize(0.87, color.gray[100]);
 
 const variants = (styles) => {
   let style = '';
@@ -23,11 +23,11 @@ const variants = (styles) => {
 
 const StyledProgressBar = createGlobalStyle`
   .progress {
-    background-color: ${color.secondary.due};
+    background-color: ${color.gray[90]};
 
     .progress-bar {
-      color: ${color.primary.due};
-      background-color: ${color.tertiary.uno};
+      color: ${color.global.textAlt};
+      background-color: ${color.variant.primary};
     }
 
     .progress-striped .progress-bar,

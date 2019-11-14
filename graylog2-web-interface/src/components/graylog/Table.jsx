@@ -7,24 +7,24 @@ import { colorLevel } from 'theme/utils';
 
 const variants = {
   active: {
-    background: colorLevel(color.secondary.tre, -10),
-    hover: colorLevel(color.secondary.tre, -9),
+    background: colorLevel(color.gray[80], -10),
+    hover: colorLevel(color.gray[80], -9),
   },
   success: {
-    background: colorLevel(color.tertiary.tre, -10),
-    hover: colorLevel(color.tertiary.tre, -9),
+    background: colorLevel(color.variant.success, -10),
+    hover: colorLevel(color.variant.success, -9),
   },
   info: {
-    background: colorLevel(color.tertiary.uno, -10),
-    hover: colorLevel(color.tertiary.uno, -9),
+    background: colorLevel(color.variant.info, -10),
+    hover: colorLevel(color.variant.info, -9),
   },
   warning: {
-    background: colorLevel(color.tertiary.sei, -10),
-    hover: colorLevel(color.tertiary.sei, -9),
+    background: colorLevel(color.variant.warning, -10),
+    hover: colorLevel(color.variant.warning, -9),
   },
   danger: {
-    background: colorLevel(color.tertiary.quattro, -10),
-    hover: colorLevel(color.tertiary.quattro, -9),
+    background: colorLevel(color.variant.danger, -10),
+    hover: colorLevel(color.variant.danger, -9),
   },
 };
 
@@ -71,20 +71,20 @@ const Table = styled(BootstrapTable)`
   &.table > thead > tr > td,
   &.table > tbody > tr > td,
   &.table > tfoot > tr > td {
-    border-top-color: ${color.secondary.tre};
+    border-top-color: ${color.gray[80]};
   }
   &.table > thead > tr > th {
-    border-bottom-color: ${color.secondary.tre};
+    border-bottom-color: ${color.gray[80]};
   }
 
   &.table > tbody + tbody {
-    border-top-color: ${color.secondary.tre};
+    border-top-color: ${color.gray[80]};
   }
   .table .table {
-    background-color: ${color.primary.due};
+    background-color: ${color.gray[100]};
   }
   &.table-bordered {
-    border-color: ${colorLevel(color.secondary.tre, -2)};
+    border-color: ${colorLevel(color.gray[80], -2)};
   }
   &.table-bordered > thead > tr > th,
   &.table-bordered > tbody > tr > th,
@@ -92,14 +92,14 @@ const Table = styled(BootstrapTable)`
   &.table-bordered > thead > tr > td,
   &.table-bordered > tbody > tr > td,
   &.table-bordered > tfoot > tr > td {
-    border-color: ${colorLevel(color.secondary.tre, -2)};
+    border-color: ${colorLevel(color.gray[80], -2)};
   }
 
   &.table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: ${colorLevel(color.secondary.tre, -10)};
+    background-color: ${colorLevel(color.gray[80], -10)};
   }
   &.table-hover > tbody > tr:hover {
-    background-color: ${colorLevel(color.secondary.tre, -9)};
+    background-color: ${colorLevel(color.gray[80], -9)};
   }
 
   ${variantRowStyles()}
