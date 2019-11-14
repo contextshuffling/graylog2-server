@@ -1,31 +1,30 @@
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { darken, lighten } from 'polished';
 
 import InputGroup from 'components/graylog/InputGroup';
-import teinte from '../teinte';
+import colors from '../colors';
 import colorLevel from '../util/colorLevel';
 
 const VARIANTS = [
   {
     success: {
-      text: colorLevel(teinte.tertiary.tre, 6),
-      border: teinte.tertiary.tre,
-      background: colorLevel(teinte.tertiary.tre, -6),
+      text: colorLevel(colors.tertiary.tre, 6),
+      border: colors.tertiary.tre,
+      background: colorLevel(colors.tertiary.tre, -6),
     },
   },
   {
     warning: {
-      text: colorLevel(teinte.tertiary.sei, 6),
-      border: teinte.tertiary.sei,
-      background: colorLevel(teinte.tertiary.sei, -6),
+      text: colorLevel(colors.tertiary.sei, 6),
+      border: colors.tertiary.sei,
+      background: colorLevel(colors.tertiary.sei, -6),
     },
   },
   {
     error: {
-      text: colorLevel(teinte.secondary.uno, 6),
-      border: teinte.secondary.uno,
-      background: colorLevel(teinte.secondary.uno, -6),
+      text: colorLevel(colors.secondary.uno, 6),
+      border: colors.secondary.uno,
+      background: colorLevel(colors.secondary.uno, -6),
     },
   },
 ];
@@ -76,15 +75,8 @@ const generateStyles = () => {
   return styles;
 };
 
-const ValidationStyles = createGlobalStyle`
+const FormControlValidationStyles = createGlobalStyle`
   ${generateStyles()}
 `;
-
-const FormControlValidationStyles = () => {
-  return (
-    <ValidationStyles />
-  );
-};
-
 
 export default FormControlValidationStyles;

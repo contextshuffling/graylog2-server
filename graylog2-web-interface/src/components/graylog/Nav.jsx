@@ -2,7 +2,7 @@
 import { Nav as BootstrapNav } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import teinte from 'theme/teinte';
+import { color } from 'theme';
 import navTabsStyles from './styles/nav-tabs';
 
 const Nav = styled(BootstrapNav)`
@@ -11,16 +11,16 @@ const Nav = styled(BootstrapNav)`
       > a {
         &:hover,
         &:focus {
-          background-color: ${teinte.secondary.due};
+          background-color: ${color.secondary.due};
         }
       }
 
       &.disabled > a {
-        color: ${teinte.secondary.tre};
+        color: ${color.secondary.tre};
 
         &:hover,
         &:focus {
-          color: ${teinte.secondary.tre};
+          color: ${color.secondary.tre};
         }
       }
     }
@@ -29,8 +29,8 @@ const Nav = styled(BootstrapNav)`
       &,
       &:hover,
       &:focus {
-        background-color: ${teinte.secondary.due};
-        border-color: ${teinte.tertiary.quattro};
+        background-color: ${color.secondary.due};
+        border-color: ${color.tertiary.quattro};
       }
     }
   }
@@ -41,8 +41,8 @@ const Nav = styled(BootstrapNav)`
         &,
         &:hover,
         &:focus {
-          color: ${teinte.primary.due};
-          background-color: ${teinte.tertiary.quattro};
+          color: ${color.primary.due};
+          background-color: ${color.tertiary.quattro};
         }
       }
     }

@@ -3,12 +3,13 @@ import styled, { css } from 'styled-components';
 import { Panel as BootstrapPanel } from 'react-bootstrap';
 import { adjustHue, darken } from 'polished';
 
-import teinte from 'theme/teinte';
-import { colorLevel } from 'theme/util';
+import { color, util } from 'theme';
 import bsStyleThemeVariant from './variants/bsStyle';
 
+console.log('util', util);
+
 const panelVariantStyles = (hex) => {
-  const backgroundColor = colorLevel(hex, -9);
+  const backgroundColor = util.colorLevel(hex, -9);
   const borderColor = darken(0.05, adjustHue(-10, hex));
 
   return css`
@@ -16,7 +17,7 @@ const panelVariantStyles = (hex) => {
       border-color: ${borderColor};
 
       & > .panel-heading {
-        color: ${colorLevel(backgroundColor, 9)};
+        color: ${util.colorLevel(backgroundColor, 9)};
         background-color: ${backgroundColor};
         border-color: ${borderColor};
 
@@ -38,25 +39,25 @@ const panelVariantStyles = (hex) => {
 };
 
 const StyledPanel = styled(BootstrapPanel)`
-  background-color: ${teinte.primary.due};
+  background-color: ${color.primary.due};
 
 
   .panel-footer {
-    background-color: ${teinte.secondary.tre};
-    border-top-color: ${teinte.secondary.due};
+    background-color: ${color.secondary.tre};
+    border-top-color: ${color.secondary.due};
   }
 
   .panel-group {
     .panel-heading {
       + .panel-collapse > .panel-body,
       + .panel-collapse > .list-group {
-        border-top-color: ${teinte.secondary.due};
+        border-top-color: ${color.secondary.due};
       }
     }
 
     .panel-footer {
       + .panel-collapse .panel-body {
-        border-bottom-color: ${teinte.secondary.due};
+        border-bottom-color: ${color.secondary.due};
       }
     }
   }
