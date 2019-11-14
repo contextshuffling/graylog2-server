@@ -29,6 +29,7 @@ const listGroupItemStyles = (hex, variant) => {
           color: ${textColor};
           background-color: ${color.variant.light[variant]};
         }
+
         &.active,
         &.active:hover,
         &.active:focus {
@@ -42,8 +43,7 @@ const listGroupItemStyles = (hex, variant) => {
 };
 
 const ListGroupItem = styled(BootstrapListGroupItem)`
-
-${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'danger'])};
+  ${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'danger'])};
 
   background-color: ${color.gray[90]};
   border-color: ${color.gray[80]};
@@ -73,7 +73,7 @@ ${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'd
 
   a&,
   button& {
-    color: ${color.gray[30]};
+    color: ${color.global.link};
 
     .list-group-item-heading {
       color: ${color.gray[20]};
@@ -81,8 +81,8 @@ ${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'd
 
     &:hover,
     &:focus {
-      color: ${color.gray[30]};
-      background-color: ${color.gray[70]};
+      color: ${color.global.linkHover};
+      background-color: ${color.gray[80]};
     }
   }
 `;
