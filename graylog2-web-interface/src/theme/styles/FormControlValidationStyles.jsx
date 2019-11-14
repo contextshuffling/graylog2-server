@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import { darken, lighten } from 'polished';
 
 import InputGroup from 'components/graylog/InputGroup';
+import { colorLevel } from 'theme/utils';
 import colors from '../colors';
-import colorLevel from '../util/colorLevel';
 
 const VARIANTS = [
   {

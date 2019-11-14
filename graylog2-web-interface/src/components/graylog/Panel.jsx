@@ -1,15 +1,14 @@
-import styled, { css } from 'styled-components';
 // eslint-disable-next-line no-restricted-imports
 import { Panel as BootstrapPanel } from 'react-bootstrap';
+import styled, { css } from 'styled-components';
 import { adjustHue, darken } from 'polished';
 
-import { color, util } from 'theme';
+import { color } from 'theme';
+import { colorLevel } from 'theme/utils';
 import bsStyleThemeVariant from './variants/bsStyle';
 
-console.log('util', util);
-
 const panelVariantStyles = (hex) => {
-  const backgroundColor = util.colorLevel(hex, -9);
+  const backgroundColor = colorLevel(hex, -9);
   const borderColor = darken(0.05, adjustHue(-10, hex));
 
   return css`
@@ -17,7 +16,7 @@ const panelVariantStyles = (hex) => {
       border-color: ${borderColor};
 
       & > .panel-heading {
-        color: ${util.colorLevel(backgroundColor, 9)};
+        color: ${colorLevel(backgroundColor, 9)};
         background-color: ${backgroundColor};
         border-color: ${borderColor};
 

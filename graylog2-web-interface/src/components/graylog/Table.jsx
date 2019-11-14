@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 // eslint-disable-next-line no-restricted-imports
 import { Table as BootstrapTable } from 'react-bootstrap';
 
-import { colorLevel } from 'theme/util';
 import { color } from 'theme';
+import { colorLevel } from 'theme/utils';
 
 const variants = {
   active: {
