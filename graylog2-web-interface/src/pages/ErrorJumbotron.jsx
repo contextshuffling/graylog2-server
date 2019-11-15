@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Col, Jumbotron, Row } from 'components/graylog';
 import styled, { createGlobalStyle } from 'styled-components';
-import { rgba } from 'polished';
+import { transparentize } from 'polished';
 
 import { color } from 'theme';
 import NotFoundBackgroundImage from 'assets/not-found-bg.jpg';
@@ -18,12 +18,12 @@ const ContainerRow = styled(Row)`
   height: 82vh;
 `;
 
-const StyledJumbotron = jumboColor => useCallback(styled(Jumbotron)`
+const StyledJumbotron = styled(Jumbotron)`
   && {
-    background-color: ${rgba(jumboColor, 0.8)};
+    background-color: ${transparentize(0.2, color.global.contentBackground)};
     text-align: center;
   }
-`, [jumboColor]);
+`;
 
 export const H1 = styled.h1`
   font-size: 52px;
@@ -31,15 +31,13 @@ export const H1 = styled.h1`
 `;
 
 const ErrorJumbotron = ({ children }) => {
-  const StyledJumbo = StyledJumbotron(color.primary.due);
-
   return (
     <ContainerRow>
       <GlobalStyle />
       <Col mdOffset={2} md={8}>
-        <StyledJumbo>
+        <StyledJumbotron>
           {children}
-        </StyledJumbo>
+        </StyledJumbotron>
       </Col>
     </ContainerRow>
   );

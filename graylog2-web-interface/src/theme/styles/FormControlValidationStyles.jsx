@@ -1,30 +1,30 @@
 import { createGlobalStyle } from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import InputGroup from 'components/graylog/InputGroup';
+import { color } from 'theme';
 import { colorLevel } from 'theme/utils';
-import colors from '../colors';
+import InputGroup from 'components/graylog/InputGroup';
 
 const VARIANTS = [
   {
     success: {
-      text: colorLevel(colors.tertiary.tre, 6),
-      border: colors.tertiary.tre,
-      background: colorLevel(colors.tertiary.tre, -6),
+      text: colorLevel(color.variant.success, 6),
+      border: color.variant.success,
+      background: colorLevel(color.variant.success, -6),
     },
   },
   {
     warning: {
-      text: colorLevel(colors.tertiary.sei, 6),
-      border: colors.tertiary.sei,
-      background: colorLevel(colors.tertiary.sei, -6),
+      text: colorLevel(color.variant.warning, 6),
+      border: color.variant.warning,
+      background: colorLevel(color.variant.warning, -6),
     },
   },
   {
     error: {
-      text: colorLevel(colors.secondary.uno, 6),
-      border: colors.secondary.uno,
-      background: colorLevel(colors.secondary.uno, -6),
+      text: colorLevel(color.variant.danger, 6),
+      border: color.variant.danger,
+      background: colorLevel(color.variant.danger, -6),
     },
   },
 ];
