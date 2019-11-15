@@ -36,14 +36,13 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
-                    "lastClassName": "lpjKsW",
+                    "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
-                      "#6c6c6c",
                       ";background-color:",
-                      "#FFF",
+                      "#fefefe",
                       ";border-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";}",
                     ],
                   },
@@ -61,10 +60,10 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
             >
               <InputGroup
                 bsClass="input-group"
-                className="InputGroup-sc-1a8jz8l-0 lpjKsW"
+                className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
-                  className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+                  className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
                 >
                   <FormControl
                     componentClass="input"
@@ -89,26 +88,26 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
-                            "lastClassName": "dOkMiK",
+                            "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
-                              "#1F1F1F",
+                              "#1f1f1f",
                               ";background-color:",
-                              "#FFF",
+                              "#fefefe",
                               ";border-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";&:focus{border-color:",
-                              "#6DC6E7",
-                              ";box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
-                              "rgba(109,198,231,0.4)",
-                              ");}&::-moz-placeholder{color:",
-                              "#b8b8b8",
+                              "#67b6ff",
+                              ";box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
+                              "rgba(103,182,255,0.4)",
+                              ";}&::-moz-placeholder{color:",
+                              "#a5a5a5",
                               ";}&:-ms-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&::-webkit-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -131,7 +130,7 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                     >
                       <FormControl
                         bsClass="form-control"
-                        className="FormControl-sc-1amoaox-0 dOkMiK"
+                        className="FormControl-sc-1amoaox-0 iqdYiB"
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -140,7 +139,7 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                         type="text"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="inputWithAddon"
                           label=""
                           name="inputWithAddon"
@@ -210,14 +209,13 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
-                    "lastClassName": "lpjKsW",
+                    "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
-                      "#6c6c6c",
                       ";background-color:",
-                      "#FFF",
+                      "#fefefe",
                       ";border-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";}",
                     ],
                   },
@@ -235,10 +233,10 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
             >
               <InputGroup
                 bsClass="input-group"
-                className="InputGroup-sc-1a8jz8l-0 lpjKsW"
+                className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
-                  className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+                  className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
                 >
                   <FormControl
                     componentClass="input"
@@ -263,26 +261,26 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
-                            "lastClassName": "dOkMiK",
+                            "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
-                              "#1F1F1F",
+                              "#1f1f1f",
                               ";background-color:",
-                              "#FFF",
+                              "#fefefe",
                               ";border-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";&:focus{border-color:",
-                              "#6DC6E7",
-                              ";box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
-                              "rgba(109,198,231,0.4)",
-                              ");}&::-moz-placeholder{color:",
-                              "#b8b8b8",
+                              "#67b6ff",
+                              ";box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
+                              "rgba(103,182,255,0.4)",
+                              ";}&::-moz-placeholder{color:",
+                              "#a5a5a5",
                               ";}&:-ms-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&::-webkit-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -305,7 +303,7 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                     >
                       <FormControl
                         bsClass="form-control"
-                        className="FormControl-sc-1amoaox-0 dOkMiK"
+                        className="FormControl-sc-1amoaox-0 iqdYiB"
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -314,7 +312,7 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                         type="text"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="inputWithButton"
                           label=""
                           name="inputWithButton"
@@ -448,14 +446,13 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                   "componentStyle": ComponentStyle {
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
-                    "lastClassName": "lpjKsW",
+                    "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
-                      "#6c6c6c",
                       ";background-color:",
-                      "#FFF",
+                      "#fefefe",
                       ";border-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";}",
                     ],
                   },
@@ -473,10 +470,10 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
             >
               <InputGroup
                 bsClass="input-group"
-                className="InputGroup-sc-1a8jz8l-0 lpjKsW"
+                className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
-                  className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+                  className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
                 >
                   <FormControl
                     componentClass="input"
@@ -501,26 +498,26 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                           "componentStyle": ComponentStyle {
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
-                            "lastClassName": "dOkMiK",
+                            "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
-                              "#1F1F1F",
+                              "#1f1f1f",
                               ";background-color:",
-                              "#FFF",
+                              "#fefefe",
                               ";border-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";&:focus{border-color:",
-                              "#6DC6E7",
-                              ";box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
-                              "rgba(109,198,231,0.4)",
-                              ");}&::-moz-placeholder{color:",
-                              "#b8b8b8",
+                              "#67b6ff",
+                              ";box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
+                              "rgba(103,182,255,0.4)",
+                              ";}&::-moz-placeholder{color:",
+                              "#a5a5a5",
                               ";}&:-ms-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&::-webkit-input-placeholder{color:",
-                              "#b8b8b8",
+                              "#a5a5a5",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
-                              "#DCE1E5",
+                              "#d2d2d2",
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -543,7 +540,7 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                     >
                       <FormControl
                         bsClass="form-control"
-                        className="FormControl-sc-1amoaox-0 dOkMiK"
+                        className="FormControl-sc-1amoaox-0 iqdYiB"
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -552,7 +549,7 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                         type="text"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="inputWithCheckboxAddon"
                           label=""
                           name="inputWithCheckboxAddon"
@@ -631,26 +628,26 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "FormControl-sc-1amoaox-0",
                     "isStatic": true,
-                    "lastClassName": "dOkMiK",
+                    "lastClassName": "iqdYiB",
                     "rules": Array [
                       "color:",
-                      "#1F1F1F",
+                      "#1f1f1f",
                       ";background-color:",
-                      "#FFF",
+                      "#fefefe",
                       ";border-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";&:focus{border-color:",
-                      "#6DC6E7",
-                      ";box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
-                      "rgba(109,198,231,0.4)",
-                      ");}&::-moz-placeholder{color:",
-                      "#b8b8b8",
+                      "#67b6ff",
+                      ";box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
+                      "rgba(103,182,255,0.4)",
+                      ";}&::-moz-placeholder{color:",
+                      "#a5a5a5",
                       ";}&:-ms-input-placeholder{color:",
-                      "#b8b8b8",
+                      "#a5a5a5",
                       ";}&::-webkit-input-placeholder{color:",
-                      "#b8b8b8",
+                      "#a5a5a5",
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";}~ .form-control-feedback.glyphicon{display:none;}",
                     ],
                   },
@@ -673,7 +670,7 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
             >
               <FormControl
                 bsClass="form-control"
-                className="FormControl-sc-1amoaox-0 dOkMiK"
+                className="FormControl-sc-1amoaox-0 iqdYiB"
                 componentClass="input"
                 inputRef={[Function]}
                 label=""
@@ -682,7 +679,7 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
                 type="text"
               >
                 <input
-                  className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                  className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                   id="inputWithoutNameProp"
                   label=""
                   name="inputWithNameProp"
@@ -743,26 +740,26 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "FormControl-sc-1amoaox-0",
                     "isStatic": true,
-                    "lastClassName": "dOkMiK",
+                    "lastClassName": "iqdYiB",
                     "rules": Array [
                       "color:",
-                      "#1F1F1F",
+                      "#1f1f1f",
                       ";background-color:",
-                      "#FFF",
+                      "#fefefe",
                       ";border-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";&:focus{border-color:",
-                      "#6DC6E7",
-                      ";box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
-                      "rgba(109,198,231,0.4)",
-                      ");}&::-moz-placeholder{color:",
-                      "#b8b8b8",
+                      "#67b6ff",
+                      ";box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px ",
+                      "rgba(103,182,255,0.4)",
+                      ";}&::-moz-placeholder{color:",
+                      "#a5a5a5",
                       ";}&:-ms-input-placeholder{color:",
-                      "#b8b8b8",
+                      "#a5a5a5",
                       ";}&::-webkit-input-placeholder{color:",
-                      "#b8b8b8",
+                      "#a5a5a5",
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
-                      "#DCE1E5",
+                      "#d2d2d2",
                       ";}~ .form-control-feedback.glyphicon{display:none;}",
                     ],
                   },
@@ -785,7 +782,7 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
             >
               <FormControl
                 bsClass="form-control"
-                className="FormControl-sc-1amoaox-0 dOkMiK"
+                className="FormControl-sc-1amoaox-0 iqdYiB"
                 componentClass="input"
                 inputRef={[Function]}
                 label=""
@@ -794,7 +791,7 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
                 type="text"
               >
                 <input
-                  className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                  className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                   id="inputWithoutNameProp"
                   label=""
                   name="inputWithoutNameProp"

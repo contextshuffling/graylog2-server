@@ -17,14 +17,14 @@ exports[`<ContentPackApplyParameter /> should render with full props 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="config_key"
           >
             Config Key
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -66,14 +66,14 @@ exports[`<ContentPackApplyParameter /> should render with full props 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="parameter"
           >
             Parameter
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="parameter"
               label="Parameter"
               name="parameter"
@@ -201,14 +201,14 @@ exports[`<ContentPackApplyParameter /> should render with minimal props 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="config_key"
           >
             Config Key
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -255,14 +255,14 @@ exports[`<ContentPackApplyParameter /> should render with minimal props 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="parameter"
           >
             Parameter
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="parameter"
               label="Parameter"
               name="parameter"
@@ -348,14 +348,14 @@ exports[`<ContentPackApplyParameter /> should render with readOnly 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="config_key"
           >
             Config Key
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -397,14 +397,14 @@ exports[`<ContentPackApplyParameter /> should render with readOnly 1`] = `
           className="form-group"
         >
           <label
-            className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
             htmlFor="parameter"
           >
             Parameter
           </label>
           <span>
             <select
-              className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+              className="FormControl-sc-1amoaox-0 iqdYiB form-control"
               id="parameter"
               label="Parameter"
               name="parameter"

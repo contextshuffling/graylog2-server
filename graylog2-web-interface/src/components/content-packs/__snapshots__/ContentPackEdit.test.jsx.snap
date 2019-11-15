@@ -9,7 +9,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
       className="subnavigation col-md-2"
     >
       <ul
-        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+        className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
         role={null}
       >
         <li
@@ -118,14 +118,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="name"
                   >
                     Name
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -137,7 +137,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                       value=""
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Give a descriptive name for this content pack.
                     </span>
@@ -147,14 +147,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="summary"
                   >
                     Summary
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -166,7 +166,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                       value=""
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Give a short summary of the content pack.
                     </span>
@@ -176,14 +176,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="description"
                   >
                     Description
                   </label>
                   <span>
                     <textarea
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="description"
                       label="Description"
                       name="description"
@@ -194,7 +194,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                       value=""
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Give a long description of the content pack in markdown.
                     </span>
@@ -204,14 +204,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="vendor"
                   >
                     Vendor
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -223,7 +223,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                       value=""
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Who did this content pack and how can he be reached. e.g Name and eMail
                     </span>
@@ -233,14 +233,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="url"
                   >
                     URL
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -251,7 +251,7 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                       value=""
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Where can I find the content pack. e.g. github url
                     </span>
@@ -489,7 +489,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
       className="subnavigation col-md-2"
     >
       <ul
-        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+        className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
         role={null}
       >
         <li
@@ -592,14 +592,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="name"
                   >
                     Name
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -611,7 +611,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                       value="Content Pack the movie"
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Give a descriptive name for this content pack.
                     </span>
@@ -621,14 +621,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="summary"
                   >
                     Summary
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -640,7 +640,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                       value="A old content pack"
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Give a short summary of the content pack.
                     </span>
@@ -650,14 +650,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="description"
                   >
                     Description
                   </label>
                   <span>
                     <textarea
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="description"
                       label="Description"
                       name="description"
@@ -668,7 +668,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                       value="## No one dares"
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Give a long description of the content pack in markdown.
                     </span>
@@ -678,14 +678,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="vendor"
                   >
                     Vendor
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -697,7 +697,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                       value="Beinstein"
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Required. Who did this content pack and how can he be reached. e.g Name and eMail
                     </span>
@@ -707,14 +707,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   className="form-group"
                 >
                   <label
-                    className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     htmlFor="url"
                   >
                     URL
                   </label>
                   <span>
                     <input
-                      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -725,7 +725,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                       value="http://beinstein.com"
                     />
                     <span
-                      className="HelpBlock-i8is92-0 huFHQV help-block"
+                      className="HelpBlock-i8is92-0 hCBNCb help-block"
                     >
                       Where can I find the content pack. e.g. github url
                     </span>
@@ -986,7 +986,7 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </h2>
                   <br />
                   <div
-                    className="Well-sc-19gs1oc-0 kezSPd well"
+                    className="Well-sc-19gs1oc-0 hnzchw well"
                   >
                     <div
                       dangerouslySetInnerHTML={

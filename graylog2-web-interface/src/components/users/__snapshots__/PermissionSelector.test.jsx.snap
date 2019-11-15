@@ -3,7 +3,7 @@
 exports[`<PermissionSelector /> should render with empty permissions 1`] = `
 <div>
   <div
-    className="Tabs-sc-1hzj2zf-0 bVstbC"
+    className="Tabs-sc-1hzj2zf-0 iEEdzV"
     id="permissionSelectorTabs"
   >
     <ul
@@ -84,7 +84,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                       className="form-group"
                     >
                       <label
-                        className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                        className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                         htmlFor="filter-streams-data-filter"
                       >
                         Filter Streams
@@ -93,7 +93,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -140,7 +140,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                 className="list-group"
               >
                 <span
-                  className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="form-group"
@@ -171,7 +171,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -235,7 +235,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -340,7 +340,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                       className="form-group"
                     >
                       <label
-                        className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                        className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                         htmlFor="filter-dashboards-data-filter"
                       >
                         Filter Dashboards
@@ -349,7 +349,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"
@@ -396,7 +396,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                 className="list-group"
               >
                 <span
-                  className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="form-group"
@@ -427,7 +427,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -491,7 +491,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -567,7 +567,7 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
 exports[`<PermissionSelector /> should render with set permissions 1`] = `
 <div>
   <div
-    className="Tabs-sc-1hzj2zf-0 bVstbC"
+    className="Tabs-sc-1hzj2zf-0 iEEdzV"
     id="permissionSelectorTabs"
   >
     <ul
@@ -648,7 +648,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                       className="form-group"
                     >
                       <label
-                        className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                        className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                         htmlFor="filter-streams-data-filter"
                       >
                         Filter Streams
@@ -657,7 +657,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -704,7 +704,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                 className="list-group"
               >
                 <span
-                  className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="form-group"
@@ -735,7 +735,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -799,7 +799,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -904,7 +904,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                       className="form-group"
                     >
                       <label
-                        className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                        className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                         htmlFor="filter-dashboards-data-filter"
                       >
                         Filter Dashboards
@@ -913,7 +913,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
-                          className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                          className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"
@@ -960,7 +960,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                 className="list-group"
               >
                 <span
-                  className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="form-group"
@@ -991,7 +991,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "
@@ -1055,7 +1055,7 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                   </div>
                 </span>
                 <span
-                  className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                 >
                   <div
                     className="itemWrapper "

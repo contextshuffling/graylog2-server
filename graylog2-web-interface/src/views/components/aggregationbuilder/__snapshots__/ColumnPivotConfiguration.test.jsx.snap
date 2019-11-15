@@ -26,7 +26,7 @@ exports[`<ColumnPivotConfiguraiton /> should render as expected 1`] = `
         </label>
       </div>
       <span
-        className="HelpBlock-i8is92-0 huFHQV help-block"
+        className="HelpBlock-i8is92-0 hCBNCb help-block"
       >
         When rollup is enabled, an additional trace totalling individual subtraces will be included.
       </span>

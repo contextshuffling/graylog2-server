@@ -15,7 +15,7 @@ exports[`BookmarkList render the BookmarkList should render empty 1`] = `
       class="modal-backdrop fade in"
     />
     <div
-      class="Modal-nuree8-0 cHlGak fade in modal"
+      class="Modal-nuree8-0 gVCAoS fade in modal"
       role="dialog"
       style="display: block; padding-right: 0px;"
       tabindex="-1"
@@ -84,14 +84,14 @@ exports[`BookmarkList render the BookmarkList should render empty 1`] = `
                   class="form-group"
                 >
                   <label
-                    class="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    class="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     for="page-size"
                   >
                     Show:
                   </label>
                   <span>
                     <select
-                      class="FormControl-sc-1amoaox-0 dOkMiK form-control input-sm"
+                      class="FormControl-sc-1amoaox-0 iqdYiB form-control input-sm"
                       id="page-size"
                       label="Show:"
                       name="page-size"
@@ -125,7 +125,7 @@ exports[`BookmarkList render the BookmarkList should render empty 1`] = `
                 class="text-center"
               >
                 <ul
-                  class="Pagination-sc-1u3exqe-0 gSmbxW pagination pagination-sm"
+                  class="Pagination-sc-1u3exqe-0 gUVkqx pagination pagination-sm"
                 >
                   <li
                     class="disabled"
@@ -241,7 +241,7 @@ exports[`BookmarkList render the BookmarkList should render with views 1`] = `
       class="modal-backdrop fade in"
     />
     <div
-      class="Modal-nuree8-0 cHlGak fade in modal"
+      class="Modal-nuree8-0 gVCAoS fade in modal"
       role="dialog"
       style="display: block; padding-right: 0px;"
       tabindex="-1"
@@ -310,14 +310,14 @@ exports[`BookmarkList render the BookmarkList should render with views 1`] = `
                   class="form-group"
                 >
                   <label
-                    class="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                    class="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                     for="page-size"
                   >
                     Show:
                   </label>
                   <span>
                     <select
-                      class="FormControl-sc-1amoaox-0 dOkMiK form-control input-sm"
+                      class="FormControl-sc-1amoaox-0 iqdYiB form-control input-sm"
                       id="page-size"
                       label="Show:"
                       name="page-size"
@@ -348,7 +348,7 @@ exports[`BookmarkList render the BookmarkList should render with views 1`] = `
                 class="list-group"
               >
                 <button
-                  class="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+                  class="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
                   type="button"
                 >
                   <h4
@@ -365,7 +365,7 @@ exports[`BookmarkList render the BookmarkList should render with views 1`] = `
                 class="text-center"
               >
                 <ul
-                  class="Pagination-sc-1u3exqe-0 gSmbxW pagination pagination-sm"
+                  class="Pagination-sc-1u3exqe-0 gUVkqx pagination pagination-sm"
                 >
                   <li
                     class="disabled"

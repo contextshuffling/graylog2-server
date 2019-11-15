@@ -15,7 +15,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
           className="col-sm-2"
         >
           <label
-            className="tokenNewNameLabel ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="tokenNewNameLabel ControlLabel-sc-1edmum5-0 brPnzl control-label"
           >
             Token Name
           </label>
@@ -24,7 +24,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
           className="col-sm-4"
         >
           <input
-            className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+            className="FormControl-sc-1amoaox-0 iqdYiB form-control"
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -71,7 +71,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
               className="form-group"
             >
               <label
-                className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                 htmlFor="filter-data-filter"
               >
                 Filter
@@ -80,7 +80,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
                 className="typeahead-wrapper"
               >
                 <input
-                  className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                  className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"
@@ -127,7 +127,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
         className="list-group"
       >
         <span
-          className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+          className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
         >
           <div
             className="headerWrapper"
@@ -136,7 +136,7 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
           </div>
         </span>
         <span
-          className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+          className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
         >
           No items to display
         </span>
@@ -177,7 +177,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
           className="col-sm-2"
         >
           <label
-            className="tokenNewNameLabel ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+            className="tokenNewNameLabel ControlLabel-sc-1edmum5-0 brPnzl control-label"
           >
             Token Name
           </label>
@@ -186,7 +186,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
           className="col-sm-4"
         >
           <input
-            className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+            className="FormControl-sc-1amoaox-0 iqdYiB form-control"
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -233,7 +233,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
               className="form-group"
             >
               <label
-                className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+                className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
                 htmlFor="filter-data-filter"
               >
                 Filter
@@ -242,7 +242,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
                 className="typeahead-wrapper"
               >
                 <input
-                  className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+                  className="FormControl-sc-1amoaox-0 iqdYiB form-control"
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"
@@ -289,7 +289,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
         className="list-group"
       >
         <span
-          className="listGroupHeader ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+          className="listGroupHeader ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
         >
           <div
             className="headerWrapper"
@@ -298,7 +298,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
           </div>
         </span>
         <span
-          className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+          className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
         >
           <div
             className="itemWrapper itemWrapperStatic"
@@ -333,7 +333,7 @@ exports[`<TokenList /> should render with tokens 1`] = `
           </div>
         </span>
         <span
-          className="ListGroupItem__StyledListGroupItem-sc-1ky0joo-0 THrbj list-group-item"
+          className="ListGroupItem-sc-1ky0joo-0 YbFtJ list-group-item"
         >
           <div
             className="itemWrapper itemWrapperStatic"

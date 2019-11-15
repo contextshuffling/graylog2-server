@@ -6,18 +6,18 @@ exports[`SeriesConfiguration renders the configuration dialog 1`] = `
     className="form-group"
   >
     <label
-      className="ControlLabel-sc-1edmum5-0 iZJNbd control-label"
+      className="ControlLabel-sc-1edmum5-0 brPnzl control-label"
     >
       Name
     </label>
     <input
-      className="FormControl-sc-1amoaox-0 dOkMiK form-control"
+      className="FormControl-sc-1amoaox-0 iqdYiB form-control"
       onChange={[Function]}
       type="text"
       value="count()"
     />
     <span
-      className="HelpBlock-i8is92-0 huFHQV help-block"
+      className="HelpBlock-i8is92-0 hCBNCb help-block"
     >
       The name of the series as it appears in the chart.
     </span>
