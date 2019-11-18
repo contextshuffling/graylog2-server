@@ -1,5 +1,5 @@
 import React, { forwardRef, useCallback } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 // eslint-disable-next-line no-restricted-imports
 import { Button as BootstrapButton } from 'react-bootstrap';
 
@@ -8,9 +8,15 @@ import { propTypes, defaultProps } from './props/button';
 
 const Button = forwardRef((props, ref) => {
   const { active, bsStyle, disabled } = props;
-  const StyledButton = useCallback(styled(BootstrapButton)`
-    ${buttonStyles(props)}
-  `, [active, bsStyle, disabled]);
+  const buildStyle = (syleProps) => {
+    const { color } = syleProps.theme;
+
+    return css`
+      ${buttonStyles({ bsStyle, color })}
+    `;
+  };
+
+  const StyledButton = useCallback(styled(BootstrapButton)(buildStyle), [active, bsStyle, disabled]);
 
   return (
     <StyledButton ref={ref} {...props} />
