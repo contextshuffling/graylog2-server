@@ -58,7 +58,7 @@ class StreamsStore {
         };
         return {
           streams: response.streams,
-          pagination: pagination,
+          pagination,
         };
       })
       .catch((errorThrown) => {
