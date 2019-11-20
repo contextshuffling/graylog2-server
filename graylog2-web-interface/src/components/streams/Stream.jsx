@@ -64,6 +64,7 @@ class Stream extends React.Component {
   };
 
   _onDelete = (stream) => {
+    // eslint-disable-next-line no-alert
     if (window.confirm('Do you really want to remove this stream?')) {
       StreamsStore.remove(stream.id, (response) => {
         UserNotification.success(`Stream '${stream.title}' was deleted successfully.`, 'Success');
@@ -95,6 +96,7 @@ class Stream extends React.Component {
 
   _onPause = () => {
     const { stream } = this.props;
+    // eslint-disable-next-line no-alert
     if (window.confirm(`Do you really want to pause stream '${stream.title}'?`)) {
       this.setState({ loading: true });
       StreamsStore.pause(stream.id, response => response)
