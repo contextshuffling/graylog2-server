@@ -25,10 +25,14 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
         >
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -85,10 +89,14 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
               >
                 <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                   className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"
@@ -195,10 +203,14 @@ exports[`<TokenList /> should render with tokens 1`] = `
         >
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -255,10 +267,14 @@ exports[`<TokenList /> should render with tokens 1`] = `
               >
                 <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                   className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"

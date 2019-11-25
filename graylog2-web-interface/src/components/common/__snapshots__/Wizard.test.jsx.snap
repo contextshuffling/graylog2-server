@@ -38,10 +38,14 @@ exports[`<Wizard /> should render in horizontal mode with 3 steps 1`] = `
     </div>
     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
       className="Nav-dzawzr-0 jJbWWy nav nav-pills"
 =======
       className="Nav-dzawzr-0 eiLPpa nav nav-pills"
 >>>>>>> master
+=======
+      className="Nav-dzawzr-0 eiLPpa nav nav-pills"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
       role={null}
     >
       <li
@@ -133,10 +137,14 @@ exports[`<Wizard /> should render in horizontal mode with 3 steps and children 1
     </div>
     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
       className="Nav-dzawzr-0 jJbWWy nav nav-pills"
 =======
       className="Nav-dzawzr-0 eiLPpa nav nav-pills"
 >>>>>>> master
+=======
+      className="Nav-dzawzr-0 eiLPpa nav nav-pills"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
       role={null}
     >
       <li
@@ -206,10 +214,14 @@ exports[`<Wizard /> should render with 3 steps 1`] = `
   >
     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
       className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
 =======
       className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
 >>>>>>> master
+=======
+      className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
       role={null}
     >
       <li
@@ -301,10 +313,14 @@ exports[`<Wizard /> should render with 3 steps and children 1`] = `
   >
     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
       className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
 =======
       className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
 >>>>>>> master
+=======
+      className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
       role={null}
     >
       <li

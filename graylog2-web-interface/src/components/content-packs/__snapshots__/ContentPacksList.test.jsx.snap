@@ -34,10 +34,14 @@ exports[`<ContentPacksList /> should render with content packs 1`] = `
             >
               <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                 className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 id="content-packs-filter"
                 label="Filter"
                 name="content-packs-filter"
@@ -1834,10 +1838,14 @@ exports[`<ContentPacksList /> should render with empty content packs 1`] = `
             >
               <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                 className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 id="content-packs-filter"
                 label="Filter"
                 name="content-packs-filter"

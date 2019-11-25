@@ -99,10 +99,14 @@ exports[`<ContentPackDetails /> should render with content pack 1`] = `
         <br />
         <div
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="Well-sc-19gs1oc-0 hnzchw well"
 =======
           className="Well-sc-19gs1oc-0 kezSPd well"
 >>>>>>> master
+=======
+          className="Well-sc-19gs1oc-0 kezSPd well"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
         >
           <div
             dangerouslySetInnerHTML={

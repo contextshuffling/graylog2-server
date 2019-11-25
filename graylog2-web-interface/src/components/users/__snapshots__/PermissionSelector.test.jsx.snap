@@ -4,10 +4,14 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
 <div>
   <div
 <<<<<<< HEAD
+<<<<<<< HEAD
     className="Tabs-sc-1hzj2zf-0 iEEdzV"
 =======
     className="Tabs-sc-1hzj2zf-0 bVstbC"
 >>>>>>> master
+=======
+    className="Tabs-sc-1hzj2zf-0 bVstbC"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
     id="permissionSelectorTabs"
   >
     <ul
@@ -98,10 +102,14 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -358,10 +366,14 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"
@@ -580,10 +592,14 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
 <div>
   <div
 <<<<<<< HEAD
+<<<<<<< HEAD
     className="Tabs-sc-1hzj2zf-0 iEEdzV"
 =======
     className="Tabs-sc-1hzj2zf-0 bVstbC"
 >>>>>>> master
+=======
+    className="Tabs-sc-1hzj2zf-0 bVstbC"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
     id="permissionSelectorTabs"
   >
     <ul
@@ -674,10 +690,14 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -934,10 +954,14 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"

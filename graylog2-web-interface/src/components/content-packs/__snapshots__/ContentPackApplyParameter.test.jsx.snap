@@ -25,10 +25,14 @@ exports[`<ContentPackApplyParameter /> should render with full props 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -78,10 +82,14 @@ exports[`<ContentPackApplyParameter /> should render with full props 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="parameter"
               label="Parameter"
               name="parameter"
@@ -217,10 +225,14 @@ exports[`<ContentPackApplyParameter /> should render with minimal props 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -275,10 +287,14 @@ exports[`<ContentPackApplyParameter /> should render with minimal props 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="parameter"
               label="Parameter"
               name="parameter"
@@ -372,10 +388,14 @@ exports[`<ContentPackApplyParameter /> should render with readOnly 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="config_key"
               label="Config Key"
               name="config_key"
@@ -425,10 +445,14 @@ exports[`<ContentPackApplyParameter /> should render with readOnly 1`] = `
           <span>
             <select
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               id="parameter"
               label="Parameter"
               name="parameter"

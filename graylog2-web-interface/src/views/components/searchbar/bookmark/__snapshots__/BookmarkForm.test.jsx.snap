@@ -47,10 +47,14 @@ exports[`BookmarkForm render the BookmarkForm should render create new 1`] = `
             </label>
             <input
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               onChange={[Function]}
               placeholder="Enter title"
               type="text"
@@ -127,10 +131,14 @@ exports[`BookmarkForm render the BookmarkForm should render disabled create new 
             </label>
             <input
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               onChange={[Function]}
               placeholder="Enter title"
               type="text"
@@ -215,10 +223,14 @@ exports[`BookmarkForm render the BookmarkForm should render save 1`] = `
             </label>
             <input
 <<<<<<< HEAD
+<<<<<<< HEAD
               className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
               className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+              className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               onChange={[Function]}
               placeholder="Enter title"
               type="text"

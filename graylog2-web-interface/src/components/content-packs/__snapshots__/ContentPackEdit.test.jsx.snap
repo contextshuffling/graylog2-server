@@ -10,10 +10,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
     >
       <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
 =======
         className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
 >>>>>>> master
+=======
+        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
         role={null}
       >
         <li
@@ -130,10 +134,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -163,10 +171,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -196,10 +208,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   <span>
                     <textarea
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="description"
                       label="Description"
                       name="description"
@@ -228,10 +244,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -261,10 +281,14 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -514,10 +538,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
     >
       <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
 =======
         className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
 >>>>>>> master
+=======
+        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
         role={null}
       >
         <li
@@ -628,10 +656,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -661,10 +693,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -694,10 +730,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <span>
                     <textarea
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="description"
                       label="Description"
                       name="description"
@@ -726,10 +766,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -759,10 +803,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <span>
                     <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                       className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -1035,10 +1083,14 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   <br />
                   <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                     className="Well-sc-19gs1oc-0 hnzchw well"
 =======
                     className="Well-sc-19gs1oc-0 kezSPd well"
 >>>>>>> master
+=======
+                    className="Well-sc-19gs1oc-0 kezSPd well"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                   >
                     <div
                       dangerouslySetInnerHTML={

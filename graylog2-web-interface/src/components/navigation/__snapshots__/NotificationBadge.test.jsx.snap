@@ -20,10 +20,14 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
             "componentId": "Nav-dzawzr-0",
             "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             "lastClassName": "jJbWWy",
 =======
             "lastClassName": "eiLPpa",
 >>>>>>> master
+=======
+            "lastClassName": "eiLPpa",
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             "rules": Array [
               "&.nav{> li{> a{&:hover,&:focus{background-color:",
               "#e8e8e8",
@@ -48,6 +52,12 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
               ";}}}&.nav-pills{> li{&.active > a{&,&:hover,&:focus{color:",
               "#FFF",
               ";background-color:",
+<<<<<<< HEAD
+=======
+              "#9E1F63",
+              ";}}}}&",
+              ".nav-tabs{border-bottom-color:",
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               "#9E1F63",
               ";}}}}&",
               ".nav-tabs{border-bottom-color:",
@@ -66,7 +76,10 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
               "#9E1F63",
               ";background-color:",
               "#F1F2F2",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               ";}}&.active > a{&,&:hover,&:focus{color:",
               "#1f1f1f",
               ";background-color:",
@@ -90,7 +103,10 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
               "#fefefe",
 =======
               "#FFF",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
               ";}}}}",
             ],
           },
@@ -110,10 +126,14 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
       <Nav
         bsClass="nav"
 <<<<<<< HEAD
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy"
 =======
         className="Nav-dzawzr-0 eiLPpa"
 >>>>>>> master
+=======
+        className="Nav-dzawzr-0 eiLPpa"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
         justified={false}
         navbar={true}
         pullLeft={false}
@@ -122,10 +142,14 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
       >
         <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="Nav-dzawzr-0 jJbWWy nav navbar-nav"
 =======
           className="Nav-dzawzr-0 eiLPpa nav navbar-nav"
 >>>>>>> master
+=======
+          className="Nav-dzawzr-0 eiLPpa nav navbar-nav"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
           role={null}
         >
           <LinkContainer

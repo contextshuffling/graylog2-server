@@ -19,10 +19,14 @@ exports[`<GrokPatternInput /> should render grok pattern input with patterns 1`]
       <span>
         <textarea
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
           id="pattern-input"
           label="Pattern"
           name="pattern-input"
@@ -57,10 +61,14 @@ exports[`<GrokPatternInput /> should render grok pattern input with patterns 1`]
         <input
           autoComplete="off"
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
           id="pattern-selector"
           label="Filter pattern"
           name="pattern-selector"
@@ -196,10 +204,14 @@ exports[`<GrokPatternInput /> should render grok pattern input without patterns 
       <span>
         <textarea
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
           id="pattern-input"
           label="Pattern"
           name="pattern-input"
@@ -234,10 +246,14 @@ exports[`<GrokPatternInput /> should render grok pattern input without patterns 
         <input
           autoComplete="off"
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
           id="pattern-selector"
           label="Filter pattern"
           name="pattern-selector"

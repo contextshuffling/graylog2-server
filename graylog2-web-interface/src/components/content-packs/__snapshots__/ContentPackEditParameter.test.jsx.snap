@@ -24,10 +24,14 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="title"
             label="Title"
             maxLength={250}
@@ -57,10 +61,14 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="name"
             label="Name"
             maxLength={250}
@@ -90,10 +98,14 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="description"
             label="Description"
             maxLength={250}
@@ -123,10 +135,14 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
         <span>
           <select
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             disabled={false}
             id="type"
             label="Value Type"
@@ -177,10 +193,14 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="default_value"
             label="Default value"
             maxLength={250}
@@ -226,10 +246,14 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="title"
             label="Title"
             maxLength={250}
@@ -259,10 +283,14 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="name"
             label="Name"
             maxLength={250}
@@ -292,10 +320,14 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="description"
             label="Description"
             maxLength={250}
@@ -325,10 +357,14 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
         <span>
           <select
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             disabled={true}
             id="type"
             label="Value Type"
@@ -379,10 +415,14 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="default_value"
             label="Default value"
             maxLength={250}
@@ -428,10 +468,14 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="title"
             label="Title"
             maxLength={250}
@@ -461,10 +505,14 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="name"
             label="Name"
             maxLength={250}
@@ -494,10 +542,14 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="description"
             label="Description"
             maxLength={250}
@@ -527,10 +579,14 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
         <span>
           <select
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             disabled={false}
             id="type"
             label="Value Type"
@@ -581,10 +637,14 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
         <span>
           <input
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
             className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
             id="default_value"
             label="Default value"
             maxLength={250}

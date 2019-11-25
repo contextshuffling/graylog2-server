@@ -37,6 +37,7 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -45,6 +46,8 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                       ";border-color:",
                       "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                     "lastClassName": "lpjKsW",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -53,7 +56,10 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                       "#FFF",
                       ";border-color:",
                       "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       ";}",
                     ],
                   },
@@ -72,16 +78,22 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
               <InputGroup
                 bsClass="input-group"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 className="InputGroup-sc-1a8jz8l-0 lpjKsW"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 >
                   <FormControl
                     componentClass="input"
@@ -107,6 +119,7 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
@@ -128,6 +141,8 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                             "lastClassName": "hdNTyr",
                             "rules": Array [
                               "color:",
@@ -144,7 +159,10 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                               "#b8b8b8",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -168,10 +186,14 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                       <FormControl
                         bsClass="form-control"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         className="FormControl-sc-1amoaox-0 iqdYiB"
 =======
                         className="FormControl-sc-1amoaox-0 hdNTyr"
 >>>>>>> master
+=======
+                        className="FormControl-sc-1amoaox-0 hdNTyr"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -181,10 +203,14 @@ exports[`Input renders a addon after the input if addonAfter is passed 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="inputWithAddon"
                           label=""
                           name="inputWithAddon"
@@ -255,6 +281,7 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -263,6 +290,8 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                       ";border-color:",
                       "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                     "lastClassName": "lpjKsW",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -271,7 +300,10 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                       "#FFF",
                       ";border-color:",
                       "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       ";}",
                     ],
                   },
@@ -290,16 +322,22 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
               <InputGroup
                 bsClass="input-group"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 className="InputGroup-sc-1a8jz8l-0 lpjKsW"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 >
                   <FormControl
                     componentClass="input"
@@ -325,6 +363,7 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
@@ -346,6 +385,8 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                             "lastClassName": "hdNTyr",
                             "rules": Array [
                               "color:",
@@ -362,7 +403,10 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                               "#b8b8b8",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -386,10 +430,14 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                       <FormControl
                         bsClass="form-control"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         className="FormControl-sc-1amoaox-0 iqdYiB"
 =======
                         className="FormControl-sc-1amoaox-0 hdNTyr"
 >>>>>>> master
+=======
+                        className="FormControl-sc-1amoaox-0 hdNTyr"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -399,10 +447,14 @@ exports[`Input renders a button after the input if buttonAfter is passed 1`] = `
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="inputWithButton"
                           label=""
                           name="inputWithButton"
@@ -537,6 +589,7 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                     "componentId": "InputGroup-sc-1a8jz8l-0",
                     "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "lastClassName": "kswgoM",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -545,6 +598,8 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                       ";border-color:",
                       "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                     "lastClassName": "lpjKsW",
                     "rules": Array [
                       ".input-group-addon{color:",
@@ -553,7 +608,10 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                       "#FFF",
                       ";border-color:",
                       "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       ";}",
                     ],
                   },
@@ -572,16 +630,22 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
               <InputGroup
                 bsClass="input-group"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="InputGroup-sc-1a8jz8l-0 kswgoM"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 kswgoM input-group"
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 className="InputGroup-sc-1a8jz8l-0 lpjKsW"
               >
                 <span
                   className="InputGroup-sc-1a8jz8l-0 lpjKsW input-group"
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 >
                   <FormControl
                     componentClass="input"
@@ -607,6 +671,7 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                             "componentId": "FormControl-sc-1amoaox-0",
                             "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "lastClassName": "iqdYiB",
                             "rules": Array [
                               "color:",
@@ -628,6 +693,8 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                             "lastClassName": "hdNTyr",
                             "rules": Array [
                               "color:",
@@ -644,7 +711,10 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                               "#b8b8b8",
                               ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                               "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                               ";}~ .form-control-feedback.glyphicon{display:none;}",
                             ],
                           },
@@ -668,10 +738,14 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                       <FormControl
                         bsClass="form-control"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         className="FormControl-sc-1amoaox-0 iqdYiB"
 =======
                         className="FormControl-sc-1amoaox-0 hdNTyr"
 >>>>>>> master
+=======
+                        className="FormControl-sc-1amoaox-0 hdNTyr"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                         componentClass="input"
                         inputRef={[Function]}
                         label=""
@@ -681,10 +755,14 @@ exports[`Input renders a checkbox addon after the input if addonAfter is passed 
                       >
                         <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                           className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                           id="inputWithCheckboxAddon"
                           label=""
                           name="inputWithCheckboxAddon"
@@ -764,6 +842,7 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
                     "componentId": "FormControl-sc-1amoaox-0",
                     "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "lastClassName": "iqdYiB",
                     "rules": Array [
                       "color:",
@@ -785,6 +864,8 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                       "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                     "lastClassName": "hdNTyr",
                     "rules": Array [
                       "color:",
@@ -801,7 +882,10 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
                       "#b8b8b8",
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                       "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       ";}~ .form-control-feedback.glyphicon{display:none;}",
                     ],
                   },
@@ -825,10 +909,14 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
               <FormControl
                 bsClass="form-control"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB"
 =======
                 className="FormControl-sc-1amoaox-0 hdNTyr"
 >>>>>>> master
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 componentClass="input"
                 inputRef={[Function]}
                 label=""
@@ -838,10 +926,14 @@ exports[`Input renders input w/ \`name\` attribute w/ setting prop 1`] = `
               >
                 <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                   className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                   id="inputWithoutNameProp"
                   label=""
                   name="inputWithNameProp"
@@ -903,6 +995,7 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
                     "componentId": "FormControl-sc-1amoaox-0",
                     "isStatic": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "lastClassName": "iqdYiB",
                     "rules": Array [
                       "color:",
@@ -924,6 +1017,8 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                       "#d2d2d2",
 =======
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                     "lastClassName": "hdNTyr",
                     "rules": Array [
                       "color:",
@@ -940,7 +1035,10 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
                       "#b8b8b8",
                       ";}&[disabled],&[readonly],fieldset[disabled] &{background-color:",
                       "#DCE1E5",
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                       ";}~ .form-control-feedback.glyphicon{display:none;}",
                     ],
                   },
@@ -964,10 +1062,14 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
               <FormControl
                 bsClass="form-control"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB"
 =======
                 className="FormControl-sc-1amoaox-0 hdNTyr"
 >>>>>>> master
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                 componentClass="input"
                 inputRef={[Function]}
                 label=""
@@ -977,10 +1079,14 @@ exports[`Input renders input w/ \`name\` attribute w/o setting prop 1`] = `
               >
                 <input
 <<<<<<< HEAD
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
 =======
                   className="FormControl-sc-1amoaox-0 hdNTyr form-control"
 >>>>>>> master
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> 13b93a394e81c89be722316e9cc306cd52c3fd91
                   id="inputWithoutNameProp"
                   label=""
                   name="inputWithoutNameProp"
