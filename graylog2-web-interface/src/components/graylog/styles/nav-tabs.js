@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
-import { breakpoint, color } from 'theme';
+import { breakpoint } from 'theme';
 
-const navTabsStyles = () => css`
+const navTabsStyles = color => css`
   .nav-tabs {
     border-bottom-color: ${color.variant.primary};
 

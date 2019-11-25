@@ -2,14 +2,12 @@
 import { InputGroup as BootstrapInputGroup } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import { color } from 'theme';
-
-const InputGroup = styled(BootstrapInputGroup)`
+const InputGroup = styled(BootstrapInputGroup)(props => `
   .input-group-addon {
-    color: ${color.gray[30]};
-    background-color: ${color.gray[100]};
-    border-color: ${color.gray[80]};
+    color: ${props.theme.color.gray[30]};
+    background-color: ${props.theme.color.gray[100]};
+    border-color: ${props.theme.color.gray[80]};
   }
-`;
+`);
 
 export default InputGroup;

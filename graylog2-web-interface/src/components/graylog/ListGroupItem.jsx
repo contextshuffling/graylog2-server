@@ -2,12 +2,11 @@
 import { ListGroupItem as BootstrapListGroupItem } from 'react-bootstrap';
 import styled, { css } from 'styled-components';
 
-import { color } from 'theme';
 import { colorLevel, readableColor } from 'theme/utils';
 
 import bsStyleThemeVariant from './variants/bsStyle';
 
-const listGroupItemStyles = (hex, variant) => {
+const listGroupItemStyles = color => (hex, variant) => {
   const backgroundColor = colorLevel(color.variant[variant], -9);
   const textColor = readableColor(backgroundColor);
 
@@ -42,50 +41,54 @@ const listGroupItemStyles = (hex, variant) => {
   `;
 };
 
-const ListGroupItem = styled(BootstrapListGroupItem)`
-  ${bsStyleThemeVariant(listGroupItemStyles, {}, ['success', 'info', 'warning', 'danger'])};
+const ListGroupItem = styled(BootstrapListGroupItem)((props) => {
+  const { color } = props.theme;
 
-  background-color: ${color.gray[90]};
-  border-color: ${color.gray[80]};
+  return css`
+    ${bsStyleThemeVariant(listGroupItemStyles(color), {}, ['success', 'info', 'warning', 'danger'])};
 
-  &&.disabled,
-  &&.disabled:hover,
-  &&.disabled:focus {
-    color: ${color.gray[60]};
     background-color: ${color.gray[90]};
+    border-color: ${color.gray[80]};
 
-    .list-group-item-text {
+    &&.disabled,
+    &&.disabled:hover,
+    &&.disabled:focus {
       color: ${color.gray[60]};
-    }
-  }
+      background-color: ${color.gray[90]};
 
-  &.active,
-  &.active:hover,
-  &.active:focus {
-    color: ${color.gray[100]};
-    background-color: ${color.variant.primary};
-    border-color: ${color.variant.light.primary};
-
-    .list-group-item-text {
-      color: ${color.variant.light.primary};
-    }
-  }
-
-  a&,
-  button& {
-    color: ${color.global.link};
-
-    .list-group-item-heading {
-      color: ${color.gray[20]};
+      .list-group-item-text {
+        color: ${color.gray[60]};
+      }
     }
 
-    &:hover,
-    &:focus {
-      color: ${color.global.linkHover};
-      background-color: ${color.gray[80]};
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: ${color.gray[100]};
+      background-color: ${color.variant.primary};
+      border-color: ${color.variant.light.primary};
+
+      .list-group-item-text {
+        color: ${color.variant.light.primary};
+      }
     }
-  }
-`;
+
+    a&,
+    button& {
+      color: ${color.global.link};
+
+      .list-group-item-heading {
+        color: ${color.gray[20]};
+      }
+
+      &:hover,
+      &:focus {
+        color: ${color.global.linkHover};
+        background-color: ${color.gray[80]};
+      }
+    }
+  `;
+});
 
 
 export default ListGroupItem;

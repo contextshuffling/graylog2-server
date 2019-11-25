@@ -2,34 +2,33 @@
 import { Tooltip as BootstrapTooltip } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import { color } from 'theme';
 import { readableColor } from 'theme/utils';
 
-const Tooltip = styled(BootstrapTooltip)`
+const Tooltip = styled(BootstrapTooltip)(({ theme }) => `
   &.top .tooltip-arrow {
     bottom: 0;
   }
   &.top .tooltip-arrow,
   &.top-left .tooltip-arrow,
   &.top-right .tooltip-arrow {
-    border-top-color: ${color.gray[10]};
+    border-top-color: ${theme.color.gray[10]};
   }
   &.right .tooltip-arrow {
-    border-right-color: ${color.gray[10]};
+    border-right-color: ${theme.color.gray[10]};
   }
   &.left .tooltip-arrow {
-    border-left-color: ${color.gray[10]};
+    border-left-color: ${theme.color.gray[10]};
   }
   &.bottom .tooltip-arrow,
   &.bottom-left .tooltip-arrow,
   &.bottom-right .tooltip-arrow {
-    border-bottom-color: ${color.gray[10]};
+    border-bottom-color: ${theme.color.gray[10]};
   }
 
   .tooltip-inner {
-    color: ${readableColor(color.gray[10])};
-    background-color: ${color.gray[10]};
+    color: ${readableColor(theme.color.gray[10])};
+    background-color: ${theme.color.gray[10]};
   }
-`;
+`);
 
 export default Tooltip;
