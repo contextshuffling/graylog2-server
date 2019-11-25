@@ -14,8 +14,10 @@ import NavDropdown from './NavDropdown';
 import Pagination from './Pagination';
 import Panel from './Panel';
 import Popover from './Popover';
+import ProgressBar from './ProgressBar';
 import SplitButton from './SplitButton';
 import Table from './Table';
+import Tabs from './Tabs';
 import Tooltip from './Tooltip';
 
 export {
@@ -35,8 +37,10 @@ export {
   Pagination,
   Panel,
   Popover,
+  ProgressBar,
   SplitButton,
   Table,
+  Tabs,
   Tooltip,
 };
 export * from './bootstrap-import';
