@@ -9,7 +9,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
       className="subnavigation col-md-2"
     >
       <ul
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
+=======
+        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> master
         role={null}
       >
         <li
@@ -125,7 +129,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -154,7 +162,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -183,7 +195,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   </label>
                   <span>
                     <textarea
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="description"
                       label="Description"
                       name="description"
@@ -211,7 +227,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -240,7 +260,11 @@ exports[`<ContentPackEdit /> should render empty content pack for create 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -489,7 +513,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
       className="subnavigation col-md-2"
     >
       <ul
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy nav nav-pills nav-stacked"
+=======
+        className="Nav-dzawzr-0 eiLPpa nav nav-pills nav-stacked"
+>>>>>>> master
         role={null}
       >
         <li
@@ -599,7 +627,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="name"
                       label="Name"
                       maxLength={250}
@@ -628,7 +660,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="summary"
                       label="Summary"
                       maxLength={250}
@@ -657,7 +693,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </label>
                   <span>
                     <textarea
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="description"
                       label="Description"
                       name="description"
@@ -685,7 +725,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="vendor"
                       label="Vendor"
                       maxLength={250}
@@ -714,7 +758,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </label>
                   <span>
                     <input
+<<<<<<< HEAD
                       className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                      className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                       id="url"
                       label="URL"
                       maxLength={250}
@@ -986,7 +1034,11 @@ exports[`<ContentPackEdit /> should render with content pack for edit 1`] = `
                   </h2>
                   <br />
                   <div
+<<<<<<< HEAD
                     className="Well-sc-19gs1oc-0 hnzchw well"
+=======
+                    className="Well-sc-19gs1oc-0 kezSPd well"
+>>>>>>> master
                   >
                     <div
                       dangerouslySetInnerHTML={

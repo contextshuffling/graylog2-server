@@ -19,7 +19,11 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "Nav-dzawzr-0",
             "isStatic": true,
+<<<<<<< HEAD
             "lastClassName": "jJbWWy",
+=======
+            "lastClassName": "eiLPpa",
+>>>>>>> master
             "rules": Array [
               "&.nav{> li{> a{&:hover,&:focus{background-color:",
               "#e8e8e8",
@@ -30,6 +34,7 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
               ";}}}.open > a{&,&:hover,&:focus{background-color:",
               "#e8e8e8",
               ";border-color:",
+<<<<<<< HEAD
               "#702785",
               ";}}}&.nav-pills{> li{&.active > a{&,&:hover,&:focus{color:",
               "#fefefe",
@@ -38,28 +43,54 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
               ";}}}}&",
               ".nav-tabs{border-bottom-color:",
               "#702785",
+=======
+              "#9E1F63",
+              ";}}}&.nav-pills{> li{&.active > a{&,&:hover,&:focus{color:",
+              "#FFF",
+              ";background-color:",
+              "#9E1F63",
+              ";}}}}&",
+              ".nav-tabs{border-bottom-color:",
+              "#9E1F63",
+>>>>>>> master
               ";> li{> a{&:hover{border-color:",
               "#e8e8e8",
               " ",
               "#e8e8e8",
               " ",
+<<<<<<< HEAD
               "#702785",
               ";background-color:",
               "#e8e8e8",
+=======
+              "#9E1F63",
+              ";background-color:",
+              "#F1F2F2",
+>>>>>>> master
               ";}}&.active > a{&,&:hover,&:focus{color:",
               "#1f1f1f",
               ";background-color:",
               "#fefefe",
               ";border-color:",
+<<<<<<< HEAD
               "#702785",
               ";border-bottom-color:transparent;}}}&.nav-justified{> .active > a,> .active > a:hover,> .active > a:focus{border-color:",
               "#702785",
+=======
+              "#9E1F63",
+              ";border-bottom-color:transparent;}}}&.nav-justified{> .active > a,> .active > a:hover,> .active > a:focus{border-color:",
+              "#9E1F63",
+>>>>>>> master
               ";}@media (min-width:",
               "768px",
               "){> li > a{border-bottom-color:",
               "#702785",
               ";}> .active > a,> .active > a:hover,> .active > a:focus{border-bottom-color:",
+<<<<<<< HEAD
               "#fefefe",
+=======
+              "#FFF",
+>>>>>>> master
               ";}}}}",
             ],
           },
@@ -78,7 +109,11 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
     >
       <Nav
         bsClass="nav"
+<<<<<<< HEAD
         className="Nav-dzawzr-0 jJbWWy"
+=======
+        className="Nav-dzawzr-0 eiLPpa"
+>>>>>>> master
         justified={false}
         navbar={true}
         pullLeft={false}
@@ -86,7 +121,11 @@ exports[`NotificationBadge renders count when there are notifications 1`] = `
         stacked={false}
       >
         <ul
+<<<<<<< HEAD
           className="Nav-dzawzr-0 jJbWWy nav navbar-nav"
+=======
+          className="Nav-dzawzr-0 eiLPpa nav navbar-nav"
+>>>>>>> master
           role={null}
         >
           <LinkContainer

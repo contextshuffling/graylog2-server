@@ -24,7 +24,11 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
           className="col-sm-4"
         >
           <input
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -80,7 +84,11 @@ exports[`<TokenList /> should render with empty tokens 1`] = `
                 className="typeahead-wrapper"
               >
                 <input
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"
@@ -186,7 +194,11 @@ exports[`<TokenList /> should render with tokens 1`] = `
           className="col-sm-4"
         >
           <input
+<<<<<<< HEAD
             className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+            className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
             id="create-token-input"
             onChange={[Function]}
             placeholder="e.g ServiceName"
@@ -242,7 +254,11 @@ exports[`<TokenList /> should render with tokens 1`] = `
                 className="typeahead-wrapper"
               >
                 <input
+<<<<<<< HEAD
                   className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                  className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                   id="filter-data-filter"
                   label="Filter"
                   name="filter-data-filter"

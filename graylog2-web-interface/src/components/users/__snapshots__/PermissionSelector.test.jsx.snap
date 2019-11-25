@@ -3,7 +3,11 @@
 exports[`<PermissionSelector /> should render with empty permissions 1`] = `
 <div>
   <div
+<<<<<<< HEAD
     className="Tabs-sc-1hzj2zf-0 iEEdzV"
+=======
+    className="Tabs-sc-1hzj2zf-0 bVstbC"
+>>>>>>> master
     id="permissionSelectorTabs"
   >
     <ul
@@ -93,7 +97,11 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -349,7 +357,11 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"
@@ -567,7 +579,11 @@ exports[`<PermissionSelector /> should render with empty permissions 1`] = `
 exports[`<PermissionSelector /> should render with set permissions 1`] = `
 <div>
   <div
+<<<<<<< HEAD
     className="Tabs-sc-1hzj2zf-0 iEEdzV"
+=======
+    className="Tabs-sc-1hzj2zf-0 bVstbC"
+>>>>>>> master
     id="permissionSelectorTabs"
   >
     <ul
@@ -657,7 +673,11 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                           id="filter-streams-data-filter"
                           label="Filter Streams"
                           name="filter-streams-data-filter"
@@ -913,7 +933,11 @@ exports[`<PermissionSelector /> should render with set permissions 1`] = `
                         className="typeahead-wrapper"
                       >
                         <input
+<<<<<<< HEAD
                           className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                          className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                           id="filter-dashboards-data-filter"
                           label="Filter Dashboards"
                           name="filter-dashboards-data-filter"

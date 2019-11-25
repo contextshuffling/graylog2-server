@@ -1,6 +1,6 @@
 
 import { mix } from 'polished';
-import colors from './colors';
+import colors from '../colors';
 
 export default function colorLevel(colorHex, level = 0) {
   /**

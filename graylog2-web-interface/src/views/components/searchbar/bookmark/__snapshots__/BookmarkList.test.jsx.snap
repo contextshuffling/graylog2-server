@@ -91,7 +91,11 @@ exports[`BookmarkList render the BookmarkList should render empty 1`] = `
                   </label>
                   <span>
                     <select
+<<<<<<< HEAD
                       class="FormControl-sc-1amoaox-0 iqdYiB form-control input-sm"
+=======
+                      class="FormControl-sc-1amoaox-0 hdNTyr form-control input-sm"
+>>>>>>> master
                       id="page-size"
                       label="Show:"
                       name="page-size"
@@ -317,7 +321,11 @@ exports[`BookmarkList render the BookmarkList should render with views 1`] = `
                   </label>
                   <span>
                     <select
+<<<<<<< HEAD
                       class="FormControl-sc-1amoaox-0 iqdYiB form-control input-sm"
+=======
+                      class="FormControl-sc-1amoaox-0 hdNTyr form-control input-sm"
+>>>>>>> master
                       id="page-size"
                       label="Show:"
                       name="page-size"

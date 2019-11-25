@@ -29,7 +29,11 @@ exports[`<ContentPackSelection /> should render with empty content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="name"
                 label="Name"
                 maxLength={250}
@@ -58,7 +62,11 @@ exports[`<ContentPackSelection /> should render with empty content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="summary"
                 label="Summary"
                 maxLength={250}
@@ -87,7 +95,11 @@ exports[`<ContentPackSelection /> should render with empty content pack 1`] = `
             </label>
             <span>
               <textarea
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="description"
                 label="Description"
                 name="description"
@@ -115,7 +127,11 @@ exports[`<ContentPackSelection /> should render with empty content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="vendor"
                 label="Vendor"
                 maxLength={250}
@@ -144,7 +160,11 @@ exports[`<ContentPackSelection /> should render with empty content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="url"
                 label="URL"
                 maxLength={250}
@@ -293,7 +313,11 @@ exports[`<ContentPackSelection /> should render with filled content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="name"
                 label="Name"
                 maxLength={250}
@@ -322,7 +346,11 @@ exports[`<ContentPackSelection /> should render with filled content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="summary"
                 label="Summary"
                 maxLength={250}
@@ -351,7 +379,11 @@ exports[`<ContentPackSelection /> should render with filled content pack 1`] = `
             </label>
             <span>
               <textarea
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="description"
                 label="Description"
                 name="description"
@@ -379,7 +411,11 @@ exports[`<ContentPackSelection /> should render with filled content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="vendor"
                 label="Vendor"
                 maxLength={250}
@@ -408,7 +444,11 @@ exports[`<ContentPackSelection /> should render with filled content pack 1`] = `
             </label>
             <span>
               <input
+<<<<<<< HEAD
                 className="FormControl-sc-1amoaox-0 iqdYiB form-control"
+=======
+                className="FormControl-sc-1amoaox-0 hdNTyr form-control"
+>>>>>>> master
                 id="url"
                 label="URL"
                 maxLength={250}

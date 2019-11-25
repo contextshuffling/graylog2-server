@@ -3,7 +3,7 @@ import { ListGroupItem as BootstrapListGroupItem } from 'react-bootstrap';
 import styled, { css } from 'styled-components';
 
 import { color } from 'theme';
-import { contrastingColor, colorLevel, readableColor } from 'theme/utils';
+import { colorLevel, readableColor } from 'theme/utils';
 
 import bsStyleThemeVariant from './variants/bsStyle';
 
