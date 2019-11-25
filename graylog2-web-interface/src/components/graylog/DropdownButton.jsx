@@ -1,26 +1,18 @@
-import React, { forwardRef, useCallback } from 'react';
+import React, { forwardRef } from 'react';
 // eslint-disable-next-line no-restricted-imports
 import { DropdownButton as BootstrapDropdownButton } from 'react-bootstrap';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import menuItemStyles from './styles/menuItem';
 import buttonStyles from './styles/button';
 import { propTypes, defaultProps } from './props/button';
 
+const StyledDropdownButton = styled(BootstrapDropdownButton)(props => `
+  ${buttonStyles(props.theme)};
+  ${menuItemStyles({ sibling: true })};
+`);
 
 const DropdownButton = forwardRef((props, ref) => {
-  const { active, bsStyle, disabled } = props;
-  const buildStyle = (syleProps) => {
-    const { color } = syleProps.theme;
-
-    return css`
-      ${buttonStyles({ bsStyle, color })};
-      ${menuItemStyles({ sibling: true })};
-    `;
-  };
-
-  const StyledDropdownButton = useCallback(styled(BootstrapDropdownButton)(buildStyle), [active, bsStyle, disabled]);
-
   return (
     <StyledDropdownButton ref={ref} {...props} />
   );
