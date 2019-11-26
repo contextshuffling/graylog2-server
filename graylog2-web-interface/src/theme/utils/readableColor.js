@@ -2,7 +2,9 @@
 import { readableColor as polishedColor } from 'polished';
 import colors from '../colors';
 
-export default function readableColor(color, darkColor = colors.global.textDefault, lightColor = colors.global.textAlt) {
+const { global } = colors.teinte;
+
+export default function readableColor(color, darkColor = global.textDefault, lightColor = global.textAlt) {
   /**
    * Recreating `color-level` from Bootstrap's SCSS functions
    * https://github.com/twbs/bootstrap/blob/08ba61e276a6393e8e2b97d56d2feb70a24fe22c/scss/_functions.scss#L97

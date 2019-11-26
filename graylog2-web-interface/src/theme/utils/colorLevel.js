@@ -2,6 +2,8 @@
 import { mix } from 'polished';
 import colors from '../colors';
 
+const { global } = colors.teinte;
+
 export default function colorLevel(colorHex, level = 0) {
   /**
    * Recreating `color-level` from Bootstrap's SCSS functions
@@ -10,7 +12,7 @@ export default function colorLevel(colorHex, level = 0) {
    * @param {string} color - any string that represents a color (ex: "#f00" or "rgb(255, 0, 0)")
    * @param {number} level - any positive or negative number
    */
-  const colorBase = level > 0 ? colors.global.textDefault : colors.global.textAlt;
+  const colorBase = level > 0 ? global.textDefault : global.textAlt;
   const absLevel = Math.abs(level) * 0.08; // TODO: make 8% a theme variable
 
   return mix(absLevel, colorBase, colorHex);
