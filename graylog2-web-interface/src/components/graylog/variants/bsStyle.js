@@ -1,7 +1,7 @@
 import theme from 'styled-theming';
 import { color } from 'theme';
 
-const variantModes = Object.keys(color);
+const themeModes = Object.keys(color);
 
 const variantColors = (mode) => {
   return {
@@ -14,13 +14,13 @@ const variantColors = (mode) => {
   };
 };
 
-const bsStyles = Object.keys(variantColors(variantModes[0]));
+const bsStyles = Object.keys(variantColors(themeModes[0]));
 
 const bsStyleThemeVariant = (cssBuilder, additionalVariants = {}, includedVariants = bsStyles) => {
-  const buildModes = (variant) => {
+  const styleModes = (variant) => {
     const modes = {};
 
-    variantModes.forEach((mode) => {
+    themeModes.forEach((mode) => {
       modes[mode] = cssBuilder(variantColors(mode)[variant], variant);
     });
 
@@ -28,7 +28,7 @@ const bsStyleThemeVariant = (cssBuilder, additionalVariants = {}, includedVarian
   };
 
   const variants = includedVariants.map(variant => ({
-    [variant]: { ...buildModes(variant) },
+    [variant]: { ...styleModes(variant) },
   }));
 
   return theme.variants('mode', 'bsStyle', Object.assign(additionalVariants, ...variants));
