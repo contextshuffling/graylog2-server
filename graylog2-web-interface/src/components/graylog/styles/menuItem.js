@@ -1,9 +1,8 @@
 import { css } from 'styled-components';
 
-import { color } from 'theme';
 import { contrastingColor, readableColor } from 'theme/utils';
 
-const menuItemStyles = (options = {}) => {
+const menuItemStyles = (color, options = {}) => {
   const { sibling = false } = options;
 
   return css`

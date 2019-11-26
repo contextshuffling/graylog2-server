@@ -1,38 +1,36 @@
 import { createGlobalStyle } from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import { color } from 'theme';
 import { colorLevel } from 'theme/utils';
 import InputGroup from 'components/graylog/InputGroup';
 
-const VARIANTS = [
-  {
-    success: {
-      text: colorLevel(color.variant.success, 6),
-      border: color.variant.success,
-      background: colorLevel(color.variant.success, -6),
-    },
-  },
-  {
-    warning: {
-      text: colorLevel(color.variant.warning, 6),
-      border: color.variant.warning,
-      background: colorLevel(color.variant.warning, -6),
-    },
-  },
-  {
-    error: {
-      text: colorLevel(color.variant.danger, 6),
-      border: color.variant.danger,
-      background: colorLevel(color.variant.danger, -6),
-    },
-  },
-];
-
-const generateStyles = () => {
+const generateStyles = (color) => {
   let styles = '';
+  const variants = [
+    {
+      success: {
+        text: colorLevel(color.variant.success, 6),
+        border: color.variant.success,
+        background: colorLevel(color.variant.success, -6),
+      },
+    },
+    {
+      warning: {
+        text: colorLevel(color.variant.warning, 6),
+        border: color.variant.warning,
+        background: colorLevel(color.variant.warning, -6),
+      },
+    },
+    {
+      error: {
+        text: colorLevel(color.variant.danger, 6),
+        border: color.variant.danger,
+        background: colorLevel(color.variant.danger, -6),
+      },
+    },
+  ];
 
-  VARIANTS.forEach((variant) => {
+  variants.forEach((variant) => {
     const key = Object.keys(variant)[0];
 
     styles += `
@@ -75,8 +73,8 @@ const generateStyles = () => {
   return styles;
 };
 
-const FormControlValidationStyles = createGlobalStyle`
-  ${generateStyles()}
-`;
+const FormControlValidationStyles = createGlobalStyle(({ theme }) => `
+  ${generateStyles(theme.color)}
+`);
 
 export default FormControlValidationStyles;

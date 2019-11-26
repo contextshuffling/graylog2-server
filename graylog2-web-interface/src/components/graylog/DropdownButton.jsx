@@ -7,9 +7,9 @@ import menuItemStyles from './styles/menuItem';
 import buttonStyles from './styles/button';
 import { propTypes, defaultProps } from './props/button';
 
-const StyledDropdownButton = styled(BootstrapDropdownButton)(props => `
-  ${buttonStyles(props.theme)};
-  ${menuItemStyles({ sibling: true })};
+const StyledDropdownButton = styled(BootstrapDropdownButton)(({ theme }) => `
+  ${buttonStyles(theme.color)};
+  ${menuItemStyles(theme.color, { sibling: true })};
 `);
 
 const DropdownButton = forwardRef((props, ref) => {
