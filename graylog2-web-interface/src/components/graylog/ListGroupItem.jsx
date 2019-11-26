@@ -41,50 +41,48 @@ const listGroupItemStyles = color => (hex, variant) => {
   `;
 };
 
-const ListGroupItem = styled(BootstrapListGroupItem)((props) => {
-  const { color } = props.theme;
-
+const ListGroupItem = styled(BootstrapListGroupItem)(({ theme }) => {
   return css`
-    ${bsStyleThemeVariant(listGroupItemStyles(color), {}, ['success', 'info', 'warning', 'danger'])};
+    ${bsStyleThemeVariant(listGroupItemStyles(theme.color), {}, ['success', 'info', 'warning', 'danger'])};
 
-    background-color: ${color.gray[90]};
-    border-color: ${color.gray[80]};
+    background-color: ${theme.color.gray[90]};
+    border-color: ${theme.color.gray[80]};
 
     &&.disabled,
     &&.disabled:hover,
     &&.disabled:focus {
-      color: ${color.gray[60]};
-      background-color: ${color.gray[90]};
+      color: ${theme.color.gray[60]};
+      background-color: ${theme.color.gray[90]};
 
       .list-group-item-text {
-        color: ${color.gray[60]};
+        color: ${theme.color.gray[60]};
       }
     }
 
     &.active,
     &.active:hover,
     &.active:focus {
-      color: ${color.gray[100]};
-      background-color: ${color.variant.primary};
-      border-color: ${color.variant.light.primary};
+      color: ${theme.color.gray[100]};
+      background-color: ${theme.color.variant.primary};
+      border-color: ${theme.color.variant.light.primary};
 
       .list-group-item-text {
-        color: ${color.variant.light.primary};
+        color: ${theme.color.variant.light.primary};
       }
     }
 
     a&,
     button& {
-      color: ${color.global.link};
+      color: ${theme.color.global.link};
 
       .list-group-item-heading {
-        color: ${color.gray[20]};
+        color: ${theme.color.gray[20]};
       }
 
       &:hover,
       &:focus {
-        color: ${color.global.linkHover};
-        background-color: ${color.gray[80]};
+        color: ${theme.color.global.linkHover};
+        background-color: ${theme.color.gray[80]};
       }
     }
   `;

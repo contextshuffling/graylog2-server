@@ -35,7 +35,7 @@ const panelVariantStyles = color => (hex, variant) => {
   `;
 };
 
-const StyledPanel = styled(BootstrapPanel)(({ theme }) => {
+const Panel = styled(BootstrapPanel)(({ theme }) => {
   const backgroundColor = theme.color.gray[90];
   const borderColor = theme.color.gray[80];
 
@@ -90,4 +90,4 @@ const StyledPanel = styled(BootstrapPanel)(({ theme }) => {
   `;
 });
 
-export default StyledPanel;
+export default Panel;

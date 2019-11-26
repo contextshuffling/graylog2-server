@@ -4,10 +4,7 @@ import { ProgressBar as BootstrapProgressBar } from 'react-bootstrap';
 import { css, createGlobalStyle } from 'styled-components';
 import { transparentize } from 'polished';
 
-import { color } from 'theme';
 import { variantColors } from './variants/bsStyle';
-
-const defaultStripColor = transparentize(0.87, color.gray[100]);
 
 const variants = (styles) => {
   let style = '';
@@ -21,30 +18,34 @@ const variants = (styles) => {
   return css`${style}`;
 };
 
-const StyledProgressBar = createGlobalStyle`
-  .progress {
-    background-color: ${color.gray[90]};
+const StyledProgressBar = createGlobalStyle(({ theme }) => {
+  const defaultStripColor = transparentize(0.87, theme.color.gray[100]);
 
-    .progress-bar {
-      color: ${color.global.textAlt};
-      background-color: ${color.variant.primary};
+  return css`
+    .progress {
+      background-color: ${theme.color.gray[90]};
+
+      .progress-bar {
+        color: ${theme.color.global.textAlt};
+        background-color: ${theme.color.variant.primary};
+      }
+
+      .progress-striped .progress-bar,
+      .progress-bar-striped {
+        background-image: linear-gradient(45deg,
+                          ${defaultStripColor} 25%,
+                          transparent 25%,
+                          transparent 50%,
+                          ${defaultStripColor} 50%,
+                          ${defaultStripColor} 75%,
+                          transparent 75%,
+                          transparent);
+      }
+
+      ${variants(['success', 'info', 'warning', 'danger'])};
     }
-
-    .progress-striped .progress-bar,
-    .progress-bar-striped {
-      background-image: linear-gradient(45deg,
-                        ${defaultStripColor} 25%,
-                        transparent 25%,
-                        transparent 50%,
-                        ${defaultStripColor} 50%,
-                        ${defaultStripColor} 75%,
-                        transparent 75%,
-                        transparent);
-    }
-
-    ${variants(['success', 'info', 'warning', 'danger'])};
-  }
-`;
+  `;
+});
 
 const ProgressBar = (props) => {
   return (

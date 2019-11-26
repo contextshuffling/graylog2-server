@@ -1,35 +1,34 @@
-import styled, { css } from 'styled-components';
 // eslint-disable-next-line no-restricted-imports
 import { Table as BootstrapTable } from 'react-bootstrap';
+import styled, { css } from 'styled-components';
 
-import { color } from 'theme';
 import { colorLevel } from 'theme/utils';
 
-const variants = {
-  active: {
-    background: colorLevel(color.gray[80], -10),
-    hover: colorLevel(color.gray[80], -9),
-  },
-  success: {
-    background: colorLevel(color.variant.success, -10),
-    hover: colorLevel(color.variant.success, -9),
-  },
-  info: {
-    background: colorLevel(color.variant.info, -10),
-    hover: colorLevel(color.variant.info, -9),
-  },
-  warning: {
-    background: colorLevel(color.variant.warning, -10),
-    hover: colorLevel(color.variant.warning, -9),
-  },
-  danger: {
-    background: colorLevel(color.variant.danger, -10),
-    hover: colorLevel(color.variant.danger, -9),
-  },
-};
-
-const variantRowStyles = () => {
+const variantRowStyles = (color) => {
   let styles = '';
+
+  const variants = {
+    active: {
+      background: colorLevel(color.gray[80], -10),
+      hover: colorLevel(color.gray[80], -9),
+    },
+    success: {
+      background: colorLevel(color.variant.success, -10),
+      hover: colorLevel(color.variant.success, -9),
+    },
+    info: {
+      background: colorLevel(color.variant.info, -10),
+      hover: colorLevel(color.variant.info, -9),
+    },
+    warning: {
+      background: colorLevel(color.variant.warning, -10),
+      hover: colorLevel(color.variant.warning, -9),
+    },
+    danger: {
+      background: colorLevel(color.variant.danger, -10),
+      hover: colorLevel(color.variant.danger, -9),
+    },
+  };
   Object.keys(variants).forEach((variant) => {
     const { background, hover } = variants[variant];
 
@@ -62,47 +61,49 @@ const variantRowStyles = () => {
   return css`${styles}`;
 };
 
-const Table = styled(BootstrapTable)`
-  background-color: transparent;
+const Table = styled(BootstrapTable)(({ theme }) => {
+  return css`
+    background-color: transparent;
 
-  &.table > thead > tr > th,
-  &.table > tbody > tr > th,
-  &.table > tfoot > tr > th,
-  &.table > thead > tr > td,
-  &.table > tbody > tr > td,
-  &.table > tfoot > tr > td {
-    border-top-color: ${color.gray[80]};
-  }
-  &.table > thead > tr > th {
-    border-bottom-color: ${color.gray[80]};
-  }
+    &.table > thead > tr > th,
+    &.table > tbody > tr > th,
+    &.table > tfoot > tr > th,
+    &.table > thead > tr > td,
+    &.table > tbody > tr > td,
+    &.table > tfoot > tr > td {
+      border-top-color: ${theme.color.gray[80]};
+    }
+    &.table > thead > tr > th {
+      border-bottom-color: ${theme.color.gray[80]};
+    }
 
-  &.table > tbody + tbody {
-    border-top-color: ${color.gray[80]};
-  }
-  .table .table {
-    background-color: ${color.gray[100]};
-  }
-  &.table-bordered {
-    border-color: ${colorLevel(color.gray[80], -2)};
-  }
-  &.table-bordered > thead > tr > th,
-  &.table-bordered > tbody > tr > th,
-  &.table-bordered > tfoot > tr > th,
-  &.table-bordered > thead > tr > td,
-  &.table-bordered > tbody > tr > td,
-  &.table-bordered > tfoot > tr > td {
-    border-color: ${colorLevel(color.gray[80], -2)};
-  }
+    &.table > tbody + tbody {
+      border-top-color: ${theme.color.gray[80]};
+    }
+    .table .table {
+      background-color: ${theme.color.gray[100]};
+    }
+    &.table-bordered {
+      border-color: ${colorLevel(theme.color.gray[80], -2)};
+    }
+    &.table-bordered > thead > tr > th,
+    &.table-bordered > tbody > tr > th,
+    &.table-bordered > tfoot > tr > th,
+    &.table-bordered > thead > tr > td,
+    &.table-bordered > tbody > tr > td,
+    &.table-bordered > tfoot > tr > td {
+      border-color: ${colorLevel(theme.color.gray[80], -2)};
+    }
 
-  &.table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: ${colorLevel(color.gray[80], -10)};
-  }
-  &.table-hover > tbody > tr:hover {
-    background-color: ${colorLevel(color.gray[80], -9)};
-  }
+    &.table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: ${colorLevel(theme.color.gray[80], -10)};
+    }
+    &.table-hover > tbody > tr:hover {
+      background-color: ${colorLevel(theme.color.gray[80], -9)};
+    }
 
-  ${variantRowStyles()}
-`;
+    ${variantRowStyles(theme.color)};
+  `;
+});
 
 export default Table;
